@@ -1,0 +1,411 @@
+.bg-darkGrey {
+  background-color: #202020;
+}
+.bg-grey {
+  background-color: #363636;
+}
+.bg-blue {
+  background-color: #2b4c5d;
+}
+.bg-lightBlue {
+  background-color: #4b8497;
+}
+
+/************* solution *************************/
+.solutionRow {
+  height: 550px;
+}
+.solutionContainer {
+  position: relative;
+  overflow: hidden;
+  height: 100%;
+}
+.solutionBloc2 {
+  display: flex;
+  flex-direction: column;
+}
+.solutionBloc2 .solutionContainer {
+  height: 50%;
+}
+.solutionHover,
+.solutionTitle {
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: transform 0.5s ease;
+}
+.solutionHover {
+  background-color: rgba(74, 131, 150, 0.4);
+  left: 100%;
+}
+.solutionContainer:hover .solutionTitle,
+.solutionContainer:hover .solutionHover {
+  transform: translateX(-100%);
+}
+
+/************** MARION **************/
+
+/*INTEGRATION DES FONT-FACES*/
+
+@font-face {
+  font-family: "KoHo-Regular";
+  src: url(../fonts/KoHo-Regular.ttf);
+}
+@font-face {
+  font-family: "KoHo-Medium";
+  src: url(../fonts/KoHo-Medium.ttf);
+}
+@font-face {
+  font-family: "KoHo-Italic";
+  src: url(../fonts/KoHo-Italic.ttf);
+}
+@font-face {
+  font-family: "KoHo-Light";
+  src: url(../fonts/KoHo-Light.ttf);
+}
+@font-face {
+  font-family: "Raleway-Regular";
+  src: url(../fonts/Raleway-Regular.ttf);
+}
+
+/*STYLE GENERAL*/
+
+h1 {
+  font-family: "KoHo-Regular";
+  font-size: 30px;
+}
+h2 {
+  font-family: "KoHo-Medium";
+  font-size: 28px;
+}
+h3 {
+  font-family: "KoHo-Light";
+  font-size: 25px;
+  color: white;
+  text-align: center;
+}
+h4 {
+  font-family: "KoHo-Light";
+  font-size: 22px;
+  color: white;
+}
+p {
+  font-family: "KoHo-Light";
+  font-size: 24px;
+}
+ul li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+
+/* **** HEADER **** */
+
+.navbar a {
+  font-family: "KoHo-Regular";
+  font-size: 14px;
+}
+
+/* **** HOMEPAGE : Nos priorités **** */
+
+.main {
+  height: 500px;
+}
+.main-image {
+  height: 500px;
+  background-size: cover;
+  background-position: center;
+}
+.quote {
+  color: white;
+  text-align: right;
+  top: 350px;
+}
+.author {
+  font-size: 16px;
+  font-family: "Raleway-Regular";
+  text-align: right;
+  bottom: -100px;
+}
+.main-content {
+  background-color: white;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  z-index: 999;
+}
+.priorities {
+  height: 600px;
+  color: white;
+}
+.priorities h2 {
+  font-family: "KoHo-Light";
+}
+.pic-priorities {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.priorities p {
+  text-align: center;
+  font-size: 14px;
+  font-family: "Raleway-Regular";
+}
+.priorities a {
+  color: white;
+  text-decoration: underline;
+  font-family: "KoHo-Light";
+  font-size: 24px;
+}
+
+/* **** HOMEPAGE : Nous contacter **** */
+
+.BlockHomepage3 {
+  height: 400px;
+}
+.BlockHomepage3 h2 {
+  font-family: "KoHo-Light";
+  color: white;
+}
+.BlockHomepage4 {
+  height: 1000px;
+}
+.accroche {
+  font-family: "Raleway-Regular";
+  font-size: 14px;
+}
+
+/* **** HOMEPAGE : Nos solutions **** */
+
+.nos-solutions {
+  height: 800px;
+}
+.nos-solutions h2 {
+  font-family: "KoHo-Light";
+  color: white;
+}
+.solutionTitle h2 {
+  text-align: center;
+}
+.solutionHover p {
+  font-size: 16px;
+  font-family: "Raleway-Regular";
+  color: white;
+  text-align: center;
+}
+.solutionHover a {
+  font-size: 16px;
+  font-family: "KoHo-Light";
+  color: white;
+  border: 1px solid white;
+  padding: 10px;
+  text-decoration: none;
+}
+
+/* **** TELEPHONIE **** */
+
+.TelephonieBlock {
+  height: 650px;
+}
+.blockPartenaires {
+  background-color: white;
+  height: 140px;
+}
+.blockPartenaires2 {
+  color: white;
+  padding: 30px;
+}
+.blockPartenaires img {
+  width: 0 auto;
+}
+.blockPartenaires2 p {
+  font-size: 16px;
+  font-family: "Raleway-Regular";
+}
+.button {
+  text-align: center;
+}
+.button a {
+  font-size: 16px;
+  font-family: "KoHo-Light";
+  color: white;
+}
+.button:hover {
+  cursor: pointer;
+}
+.button a:hover {
+  text-decoration: none;
+}
+
+/* **** INFORMATIQUE **** */
+
+.BlockInfo {
+  height: 500px;
+}
+.BlockInfo2 {
+  height: 800px;
+}
+.blocservices {
+  z-index: 99;
+}
+.imgservices {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+.imgservices img {
+  filter: brightness(50%);
+}
+.imgservices a:hover {
+  filter: invert(23%) sepia(52%) saturate(420%) hue-rotate(155deg)
+    brightness(97%) contrast(90%);
+}
+.title {
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  transition: transform 0.5s ease;
+  text-align: center;
+}
+.gallerie img {
+  width: 100%;
+  height: 600px;
+  object-fit: cover;
+}
+.service-info {
+  color: white;
+  font-size: 16px;
+  font-family: "Raleway-Regular";
+}
+.nav-link.active {
+  background: none !important;
+}
+p.p1 {
+  color: white;
+  font-family: "Raleway-Regular";
+  font-size: 16px;
+}
+
+/* **** CONTACT **** */
+
+.contact-main-img {
+  background-position: top;
+  height: 500px;
+  background-size: cover;
+  filter: brightness(50%);
+}
+.contactimg {
+  height: 900px;
+  object-fit: cover;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+.BlockContact {
+  height: 1000px;
+}
+.BlockContact2 {
+  height: 400px;
+}
+.form label {
+  font-family: "KoHo-Regular" !important;
+  font-size: 16px !important;
+}
+.form input {
+  border: 1px solid #4b8497 !important;
+}
+.form textarea {
+  border: 1px solid #4b8497 !important;
+}
+.form input[type="submit"] {
+  width: 50% !important;
+  display: block !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  background-color: #4b8497 !important;
+  color: white !important;
+}
+.footer-contact {
+  height: 250px;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  bottom: 0 !important;
+}
+.footer-contact p {
+  color: white;
+  font-size: 16px;
+}
+
+/* **** SAV **** */
+
+.sav-main-img {
+  height: 500px;
+  background-size: cover;
+  background-position: center;
+  filter: brightness(50%);
+}
+.sav-card {
+  height: 500px;
+  z-index: 99;
+}
+.picto {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.sav-card img {
+  width: 15%;
+  margin: 0 auto;
+}
+.sav-card h4 {
+  color: #4b8497;
+  text-align: center;
+}
+.sav-card p {
+  font-size: 16px;
+  text-align: center;
+  color: #4b8497;
+}
+.BlocSav {
+  height: 300px;
+}
+.bloc-title {
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.bloc-body {
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+/* **** FOOTER **** */
+
+.footer h4 {
+  font-size: 16px;
+}
+.footer p {
+  color: white;
+  font-size: 16px;
+  font-family: "Raleway-Regular";
+}
+.linkd {
+  display: block;
+  margin-left: 20%;
+}
+.vertical-line {
+  border-left: 1px solid white;
+  display: inline-block;
+  height: 100px;
+  margin: 0 20px;
+}
