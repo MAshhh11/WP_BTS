@@ -207,6 +207,29 @@ a {
   padding: 10px;
   text-decoration: none;
 }
+/* **** IMPRESSION **** */
+
+.BlockImpression {
+  height: 400px;
+}
+.BlockImpression2 {
+  height: 800px;
+}
+.imgservice {
+  z-index: 99;
+}
+.imgservice a img {
+  filter: brightness(50%);
+  width: 210px;
+  height: 210px;
+  object-fit: cover;
+}
+.imgservice a:hover {
+  filter: invert(23%) sepia(52%) saturate(420%) hue-rotate(155deg)
+    brightness(97%) contrast(90%);
+}
+
+/* le reste du css pour la mise en forme des services/galeries/textes se trouve dans la partie informatique */
 
 /* **** TELEPHONIE **** */
 
@@ -258,8 +281,9 @@ a {
   width: 100%;
   margin: 0;
   padding: 0;
+  z-index: 99;
 }
-.imgservices img {
+.imgservices a img {
   filter: brightness(50%);
 }
 .imgservices a:hover {
