@@ -42,7 +42,7 @@ get_header();
                     <div class=" col-12 col-lg-6 form p-5">
                         <?= the_content(); ?>
                     </div>
-                    <div class=" col-12 col-lg-6 position-relative">
+                    <div class=" col-12 col-md-3 col-lg-6 position-relative">
                         <img class="contactimg position-absolute" src="<?= $contact['url'] ?>" alt="img-contact">
                         <div class="footer-contact bg-lightBlue d-flex justify-content-center position-absolute">
                             <div class="my-auto mx-auto">

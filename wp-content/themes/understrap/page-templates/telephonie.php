@@ -38,7 +38,7 @@ get_header();
 					<img src="<?php echo $asset ?>icone_titre.png" alt="logo_titre">
 				</div>
 				<div class="row mt-2 ">
-					<div class="col-lg-6 mx-auto main-content mt-3 p-5">
+					<div class="col-12 col-lg-6 mx-auto main-content mt-3 p-5">
 						<?= the_content(); ?>
 					</div>
 				</div>

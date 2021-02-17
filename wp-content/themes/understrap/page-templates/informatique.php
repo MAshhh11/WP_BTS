@@ -38,7 +38,7 @@ get_header();
 					<img src="<?php echo $asset ?>icone_titre.png" alt="logo_titre">
 				</div>
 				<div class="row mt-2 ">
-					<div class="col-lg-6 mx-auto main-content mt-3 p-5">
+					<div class="col-12 col-lg-6 mx-auto main-content mt-3 p-5">
 						<?= the_content(); ?>
 					</div>
 				</div>
@@ -58,7 +58,7 @@ get_header();
 						<div class="row">
 							<!-- SERVICES INFO -->
 							<ul class="nav nav-pills mb-3 position-relative" id="pills-tab" role="tablist">
-								<li class="nav-item active col-4 imgservices" role="presentation">
+								<li class="nav-item active col-12 col-lg-4 imgservices" role="presentation">
 									<a class="nav-link" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">
 										<img src="<?= $serviceinfos[0]['image']['url'] ?>" alt="service info">
 										<div class="position-absolute title">
@@ -66,7 +66,7 @@ get_header();
 										</div>
 									</a>
 								</li>
-								<li class="nav-item col-4 position-relative imgservices" role="presentation">
+								<li class="nav-item col-12 col-lg-4 position-relative imgservices" role="presentation">
 									<a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">
 										<img src="<?= $serviceinfos[1]['image']['url'] ?>" alt="service info">
 										<div class="position-absolute title">
@@ -74,7 +74,7 @@ get_header();
 										</div>
 									</a>
 								</li>
-								<li class="nav-item col-4 position-relative imgservices" role="presentation">
+								<li class="nav-item col-12 col-lg-4 position-relative imgservices" role="presentation">
 									<a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">
 										<img src="<?= $serviceinfos[2]['image']['url'] ?>" alt="service info">
 										<div class="position-absolute title">
@@ -88,7 +88,7 @@ get_header();
 								<div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
 									<div class="container">
 										<div class="row">
-											<div class="gallerie col-4">
+											<div class="gallerie col-12 col-lg-4">
 												<div class="owl-carousel owl-carouselinfo owl-theme">
 													<div class="item">
 														<img src="<?= $serviceinfo2[0]['gallerie'][0]['url'] ?>" alt="service info">
@@ -101,7 +101,7 @@ get_header();
 													</div>
 												</div>
 											</div>
-											<div class="col-8 bg-blue p-4">
+											<div class="col-12 col-lg-8 bg-blue p-4">
 												<p class="service-info"><?= $serviceinfo2[0]['texte']; ?></p>
 											</div>
 										</div>
@@ -110,7 +110,7 @@ get_header();
 								<div class="tab-pane fade blocservices" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
 									<div class="container">
 										<div class="row">
-											<div class="gallerie col-4">
+											<div class="gallerie col-12 col-lg-4">
 												<div class="owl-carousel owl-carouselinfo owl-theme">
 													<div class="item">
 														<img src="<?= $serviceinfo2[1]['gallerie'][0]['url'] ?>" alt="service info">
@@ -123,7 +123,7 @@ get_header();
 													</div>
 												</div>
 											</div>
-											<div class="col-8 bg-blue p-4">
+											<div class="col-12 col-lg-8 bg-blue p-4">
 												<p class="service-info"><?= $serviceinfo2[1]['texte']; ?></p>
 											</div>
 										</div>
@@ -132,7 +132,7 @@ get_header();
 								<div class="tab-pane fade blocservices" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
 									<div class="container">
 										<div class="row">
-											<div class="gallerie col-4">
+											<div class="gallerie col-12 col-lg-4">
 												<div class="owl-carousel owl-carouselinfo owl-theme">
 													<div class="item">
 														<img src="<?= $serviceinfo2[2]['gallerie'][0]['url'] ?>" alt="service info">
@@ -145,7 +145,7 @@ get_header();
 													</div>
 												</div>
 											</div>
-											<div class="col-8 bg-blue p-4">
+											<div class="col-12 col-lg-8 bg-blue p-4">
 												<p class="service-info"><?= $serviceinfo2[2]['texte']; ?></p>
 											</div>
 										</div>

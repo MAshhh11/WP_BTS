@@ -231,6 +231,29 @@ a {
 
 /* le reste du css pour la mise en forme des services/galeries/textes se trouve dans la partie informatique */
 
+.tab-page {
+  font-family: "KoHo-Regular";
+  font-size: 24px;
+}
+
+p.p2 {
+  font-size: 22px;
+}
+
+p.p3 {
+  font-size: 16px;
+}
+.mainsolution {
+  height: 400px;
+}
+
+.ImpressionSolutions {
+  height: 500px;
+}
+.ImpressionSolutions2 {
+  height: 500px;
+}
+
 /* **** TELEPHONIE **** */
 
 .TelephonieBlock {
@@ -415,6 +438,10 @@ p.p1 {
 
 /* **** FOOTER **** */
 
+.footer {
+  display: flex;
+  justify-content: center;
+}
 .footer h4 {
   font-size: 16px;
 }
@@ -426,10 +453,4 @@ p.p1 {
 .linkd {
   display: block;
   margin-left: 20%;
-}
-.vertical-line {
-  border-left: 1px solid white;
-  display: inline-block;
-  height: 100px;
-  margin: 0 20px;
 }
