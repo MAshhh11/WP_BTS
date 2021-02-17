@@ -242,6 +242,7 @@ p.p2 {
 
 p.p3 {
   font-size: 16px;
+  text-align: center;
 }
 .mainsolution {
   height: 400px;
@@ -251,7 +252,12 @@ p.p3 {
   height: 500px;
 }
 .ImpressionSolutions2 {
-  height: 500px;
+  height: 1100px;
+}
+.picto-soluce {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* **** TELEPHONIE **** */

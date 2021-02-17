@@ -224,23 +224,113 @@ get_header();
                 </div>
             </div>
             <div class="row bg-grey ImpressionSolutions">
-                <div class="">
+                <!-- SERVICES SOLUTIONS -->
+                <?php $servicesolution = get_field('servicesolution'); ?>
+                <?php $servicesolution2 = get_field('servicesolution2'); ?>
+                <?php $servicesolution3 = get_field('servicesolution3'); ?>
+                <?php $servicesolution4 = get_field('servicesolution4'); ?>
+                <div class="container mt-5">
+                    <div class="row mt-5">
+                        <ul class="nav nav-pills mb-3 position-relative" id="pills-tab" role="tablist">
+                            <li class="nav-item active col-12 col-lg-6 imgservices mt-5" role="presentation">
+                                <a class="nav-link" id="pills-ged-tab" data-toggle="pill" href="#pills-ged" role="tab" aria-controls="pills-ged" aria-selected="true">
+                                    <img src="<?= $servicesolution[0]['image']['url'] ?>" alt="service info">
+                                    <div class="position-absolute title">
+                                        <h4><?= $servicesolution[0]['title']; ?></h4>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="nav-item col-12 col-lg-6 position-relative imgservices mt-5" role="presentation">
+                                <a class="nav-link" id="pills-logiciel-tab" data-toggle="pill" href="#pills-logiciel" role="tab" aria-controls="pills-logiciel" aria-selected="false">
+                                    <img src="<?= $servicesolution[1]['image']['url'] ?>" alt="service info">
+                                    <div class="position-absolute title">
+                                        <h4><?= $servicesolution[1]['title']; ?></h4>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                        <!-- CONTENT SERVICES -->
+                        <div class="tab-content blocservices" id="pills-tabContent">
+                            <div class="tab-pane fade show active" id="pills-ged" role="tabpanel" aria-labelledby="pills-ged-tab">
+                                <div class="container col-12">
+                                    <div class="row bg-blue  p-5">
+                                        <div class="">
+                                            <p class="p1"><?= $servicesolution3[0]['texte'] ?></p>
+                                        </div>
+                                    </div>
+                                    <div class="row d-flex justify-content-center bg-white p-5">
 
+                                        <?php foreach ($servicesolution2 as $soluce2) : ?>
+                                            <div class="col-3">
+                                                <div class="col-12">
+                                                    <img class="picto-soluce" src="<?= $soluce2['picto']['url'] ?>" alt="picto" style="width:50%;">
+                                                </div>
+                                                <div class="col-12">
+                                                    <p class="p3 mt-3"><?= $soluce2['textepicto']; ?></p>
+                                                </div>
+                                            </div>
+                                        <?php endforeach; ?>
+
+                                    </div>
+                                    <div class="row p-5 bg-blue">
+                                        <div class="">
+                                            <p class="p1"><?= $servicesolution3[0]['texte2'] ?></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade blocservices" id="pills-logiciel" role="tabpanel" aria-labelledby="pills-logiciel-tab">
+                                <div class="container">
+                                    <div class="row bg-blue p-5">
+                                        <div class="">
+                                            <p class="p1"><?= $servicesolution3[1]['texte'] ?></p>
+                                        </div>
+                                    </div>
+                                    <div class="row bg-white justify-content-center p-5">
+
+                                        <?php foreach ($servicesolution4 as $soluce4) : ?>
+                                            <div class="col-3">
+                                                <div class="col-12">
+                                                    <img class="picto-soluce" src="<?= $soluce4['picto']['url'] ?>" alt="picto" style="width:50%;">
+                                                </div>
+                                                <div class="col-12">
+                                                    <p class="p3 mt-3"><?= $soluce4['textepicto']; ?></p>
+                                                </div>
+                                            </div>
+                                        <?php endforeach; ?>
+
+                                    </div>
+                                    <div class="row bg-blue p-5">
+                                        <div class="">
+                                            <p class="p1"><?= $servicesolution3[1]['texte2'] ?></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mx-auto ">
+                        <div class="col-6 button bg-lightBlue mx-auto mb-5 mt-5 p-3">
+                            <a href=""><i class="fas fa-caret-right"></i> QUELLE EST CELLE QUI VOUS CONVIENDRA ?</a>
+                        </div>
+                    </div>
                 </div>
+                <!-- FIN SERVICES SOLUTIONS -->
             </div>
+
             <div class="row bg-darkGrey ImpressionSolutions2">
-                <div class="">
 
-                </div>
-
-                <!-- END SOLUTION TAB CONTENT-->
             </div>
+
+            <!-- END MATERIEL TAB CONTENT-->
         </div>
-
-        <!-- TAB END -->
-
     </div>
 
+    <!-- TAB END -->
 
-    <?php
-    get_footer();
+</div>
+
+
+
+<?php
+get_footer();
