@@ -10,6 +10,7 @@
 
 // Exit if accessed directly.
 defined('ABSPATH') || exit;
+$asset = get_site_url() . '/assets/img/';
 
 $container = get_theme_mod('understrap_container_type');
 ?>
@@ -49,7 +50,7 @@ $container = get_theme_mod('understrap_container_type');
 					</div>
 				</div>
 				<div class="row">
-					<div class="col-12 bg-darkGrey">
+					<div class="col-12 bg-white">
 						<div class="container">
 							<div class="row">
 								<div class="col-12">
@@ -63,7 +64,7 @@ $container = get_theme_mod('understrap_container_type');
 
 										<?php else : ?>
 
-											<a class="navbar-brand" rel="home" href="<?php echo esc_url(home_url('/')); ?>" title="<?php echo esc_attr(get_bloginfo('name', 'display')); ?>" itemprop="url"><?php bloginfo('name'); ?></a>
+											<a class="navbar-brand" rel="home" href="<?php echo esc_url(home_url('/')); ?>" title="<?php echo esc_attr(get_bloginfo('name', 'display')); ?>" itemprop="url"><img src="<?php echo $asset ?>logo@2x.png" alt="logo_bts" style="width:40%;"></a>
 
 										<?php endif; ?>
 

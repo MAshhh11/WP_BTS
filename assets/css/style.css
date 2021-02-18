@@ -113,6 +113,33 @@ a {
   font-family: "KoHo-Regular";
   font-size: 14px;
 }
+.navbar-dark .navbar-nav .nav-link:hover {
+  color: #202020;
+}
+.navbar-dark .navbar-nav .nav-link:visited {
+  color: #202020;
+}
+.navbar-dark .navbar-nav .nav-link {
+  color: #202020;
+  font-size: 1em;
+  position: relative;
+  transition: all 0.5s;
+}
+.navbar-dark .navbar-nav .nav-link::after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  background-color: #202020;
+  color: transparent;
+  width: 0%;
+  content: ".";
+  height: 2px;
+}
+.navbar-dark .navbar-nav .nav-link:hover::after {
+  width: 50%;
+}
 
 /* **** HOMEPAGE : Nos priorités **** */
 
@@ -217,6 +244,8 @@ a {
 }
 .imgservice {
   z-index: 99;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 .imgservice a img {
   filter: brightness(50%);
