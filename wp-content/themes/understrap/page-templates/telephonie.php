@@ -19,12 +19,12 @@ get_header();
 ?>
 <div class="container-fluid">
 	<div class="row main-image" style="background-image:url(<?= get_the_post_thumbnail_url(); ?>)">
-		<div class="col-4 offset-8  quote position-relative">
+		<div class="col-4 quote">
 			<div class="row">
-				<p class="position-absolute">"Lorem ipsum dolor sit, amet consectetur armor elit"</p>
+				<p class="">"Lorem ipsum dolor sit, amet consectetur armor elit"</p>
 			</div>
-			<div class="row col-2 offset-10">
-				<p class="author position-absolute">Auteur</p>
+			<div class="row col-2">
+				<p class="author ">Auteur</p>
 			</div>
 		</div>
 	</div>
@@ -38,7 +38,7 @@ get_header();
 					<img src="<?php echo $asset ?>icone_titre.png" alt="logo_titre">
 				</div>
 				<div class="row mt-2 ">
-					<div class="col-12 col-lg-6 mx-auto main-content mt-3 p-5">
+					<div class="col-12 col-sm-12 col-md-10 col-lg-6 mx-auto main-content mt-3 p-5">
 						<?= the_content(); ?>
 					</div>
 				</div>
@@ -53,7 +53,7 @@ get_header();
 			<div class="container mt-5 p-5">
 				<div class="row mx-auto bg-white">
 					<?php foreach ($partenairesicones as $partenairesicone) : ?>
-						<div class="col-12 col-md-4 col-lg-2 d-flex align-items-center mx-auto blockPartenaires">
+						<div class="col-12 col-sm-6 col-md-4 col-lg-2 d-flex align-items-center mx-auto blockPartenaires">
 							<img src="<?= $partenairesicone['image']['url'] ?>" style="width:140px;" alt="partenaire icone">
 						</div>
 					<?php endforeach; ?>
@@ -64,7 +64,7 @@ get_header();
 					</div>
 				</div>
 				<div class="row">
-					<div class="col-4 button bg-lightBlue mx-auto mt-5 p-3">
+					<div class="col-6 col-md-6 col-lg-4 button bg-lightBlue mx-auto mt-5 p-3">
 						<a href=""><i class="fas fa-caret-right"></i> N’HÉSITEZ PAS À NOUS CONTACTER</a>
 					</div>
 				</div>

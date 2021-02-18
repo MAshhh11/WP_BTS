@@ -19,12 +19,12 @@ get_header();
 ?>
 <div class="container-fluid">
 	<div class="row main-image" style="background-image:url(<?= get_the_post_thumbnail_url(); ?>)">
-		<div class="col-4 offset-8  quote position-relative">
+		<div class="col-12 quote">
 			<div class="row">
-				<p class="position-absolute">"Lorem ipsum dolor sit, amet consectetur armor elit"</p>
+				<p class="">"Lorem ipsum dolor sit, amet consectetur armor elit"</p>
 			</div>
-			<div class="row col-2 offset-10">
-				<p class="author position-absolute">Auteur</p>
+			<div class="row col-12">
+				<p class="author">Auteur</p>
 			</div>
 		</div>
 	</div>
@@ -38,7 +38,7 @@ get_header();
 					<img src="<?php echo $asset ?>icone_titre.png" alt="logo_titre">
 				</div>
 				<div class="row mt-2 ">
-					<div class="col-12 col-lg-6 mx-auto main-content mt-3 p-5">
+					<div class="col-12 col-sm-12 col-md-10 col-lg-6 mx-auto main-content mt-3 p-5">
 						<?= the_content(); ?>
 					</div>
 				</div>
@@ -58,7 +58,7 @@ get_header();
 						<div class="row">
 							<!-- SERVICES INFO -->
 							<ul class="nav nav-pills mb-3 position-relative" id="pills-tab" role="tablist">
-								<li class="nav-item active col-12 col-lg-4 imgservices" role="presentation">
+								<li class="nav-item active col-12 col-sm-6 col-md-4 col-lg-4 imgservices" role="presentation">
 									<a class="nav-link" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">
 										<img src="<?= $serviceinfos[0]['image']['url'] ?>" alt="service info">
 										<div class="position-absolute title">
@@ -66,7 +66,7 @@ get_header();
 										</div>
 									</a>
 								</li>
-								<li class="nav-item col-12 col-lg-4 position-relative imgservices" role="presentation">
+								<li class="nav-item col-12 col-sm-6 col-md-4 col-lg-4 position-relative imgservices" role="presentation">
 									<a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">
 										<img src="<?= $serviceinfos[1]['image']['url'] ?>" alt="service info">
 										<div class="position-absolute title">
@@ -74,7 +74,7 @@ get_header();
 										</div>
 									</a>
 								</li>
-								<li class="nav-item col-12 col-lg-4 position-relative imgservices" role="presentation">
+								<li class="nav-item col-12 col-sm-6 col-md-4 col-lg-4 position-relative imgservices" role="presentation">
 									<a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">
 										<img src="<?= $serviceinfos[2]['image']['url'] ?>" alt="service info">
 										<div class="position-absolute title">
@@ -88,7 +88,7 @@ get_header();
 								<div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
 									<div class="container">
 										<div class="row">
-											<div class="gallerie col-12 col-lg-4">
+											<div class="gallerie col-12 col-sm-12 col-md-4 col-lg-4">
 												<div class="owl-carousel owl-carouselinfo owl-theme">
 													<div class="item">
 														<img src="<?= $serviceinfo2[0]['gallerie'][0]['url'] ?>" alt="service info">
@@ -101,7 +101,7 @@ get_header();
 													</div>
 												</div>
 											</div>
-											<div class="col-12 col-lg-8 bg-blue p-4">
+											<div class="col-12 ol-sm-12 col-md-8 col-lg-8 bg-blue p-4">
 												<p class="service-info"><?= $serviceinfo2[0]['texte']; ?></p>
 											</div>
 										</div>

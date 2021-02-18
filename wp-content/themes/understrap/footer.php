@@ -20,20 +20,20 @@ $asset = get_site_url() . '/assets/img/';
 		<div class="col-12">
 			<div class="container footer mt-5 mb-5">
 				<div class="row">
-					<div class="col-12 col-lg-3">
+					<div class="col-12 col-sm-6 col-md-4 col-lg-3">
 						logo
 					</div>
-					<div class="col-12 col-lg-3">
+					<div class="col-12 col-sm-6 col-md-4 col-lg-3">
 						<h4>NOUS RENCONTRER</h4>
 						<p><i class="fas fa-caret-right"></i> 3 Avenue de Marsaou
 							33610 Canéjan</p>
 					</div>
-					<div class="col-12 col-lg-3">
+					<div class="col-12 col-sm-6 col-md-4 col-lg-3">
 						<h4>NOUS CONTACTER</h4>
 						<p><i class="fas fa-caret-right"></i> +33 (0)5 56 79 03 28</p>
 						<p><i class="fas fa-caret-right"></i> Par Mail</p>
 					</div>
-					<div class="col-12 col-lg-3">
+					<div class="col-12 col-sm-6 col-md-4 col-lg-3">
 						<h4>NOUS RETROUVER</h4>
 						<img class="linkd" src="<?php echo $asset ?>icone_linkedin@2x.png" style="width:10%;" alt="linkedin">
 					</div>

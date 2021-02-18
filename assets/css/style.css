@@ -109,6 +109,9 @@ a {
 
 /* **** HEADER **** */
 
+#bts-logo {
+  width: 40%;
+}
 .navbar a {
   font-family: "KoHo-Regular";
   font-size: 14px;
@@ -139,7 +142,6 @@ a {
 .navbar-dark .navbar-nav .nav-link:hover::after {
   width: 50%;
 }
-
 /* **** HOMEPAGE : Nos priorités **** */
 
 .main {
@@ -152,13 +154,11 @@ a {
 }
 .quote {
   color: white;
-  text-align: right;
   top: 350px;
 }
 .author {
   font-size: 16px;
   font-family: "Raleway-Regular";
-  text-align: right;
   bottom: -100px;
 }
 .main-content {
@@ -190,23 +190,6 @@ a {
   font-size: 24px;
 }
 
-/* **** HOMEPAGE : Nous contacter **** */
-
-.BlockHomepage3 {
-  height: 400px;
-}
-.BlockHomepage3 h2 {
-  font-family: "KoHo-Light";
-  color: white;
-}
-.BlockHomepage4 {
-  height: 1000px;
-}
-.accroche {
-  font-family: "Raleway-Regular";
-  font-size: 14px;
-}
-
 /* **** HOMEPAGE : Nos solutions **** */
 
 .nos-solutions {
@@ -232,6 +215,22 @@ a {
   border: 1px solid white;
   padding: 10px;
   text-decoration: none;
+}
+/* **** HOMEPAGE : Nous contacter **** */
+
+.BlockHomepage3 {
+  height: 400px;
+}
+.BlockHomepage3 h2 {
+  font-family: "KoHo-Light";
+  color: white;
+}
+.BlockHomepage4 {
+  height: 1000px;
+}
+.accroche {
+  font-family: "Raleway-Regular";
+  font-size: 14px;
 }
 /* **** IMPRESSION **** */
 

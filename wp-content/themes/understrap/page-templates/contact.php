@@ -19,12 +19,12 @@ get_header();
 ?>
 <div class="container-fluid">
     <div class="row contact-main-img" style="background-image:url(<?= get_the_post_thumbnail_url(); ?>)">
-        <div class="col-6 offset-6  quote position-relative">
+        <div class="col-12 quote">
             <div class="row">
-                <p class="position-absolute">"C’est au contact d’autrui que l’Homme apprend ce qu’il sait"</p>
+                <p class="">"C’est au contact d’autrui que l’Homme apprend ce qu’il sait"</p>
             </div>
-            <div class="row col-2 offset-10">
-                <p class="author position-absolute">Euripide</p>
+            <div class="row col-12">
+                <p class="author">Euripide</p>
             </div>
         </div>
     </div>
@@ -39,26 +39,27 @@ get_header();
                     <img src="<?php echo $asset ?>icone_titre.png" alt="logo_titre">
                 </div>
                 <div class="container mt-5 d-flex justify-content-center main-content">
-                    <div class=" col-12 col-lg-6 form p-5">
-                        <?= the_content(); ?>
-                    </div>
-                    <div class=" col-12 col-md-3 col-lg-6 position-relative">
-                        <img class="contactimg position-absolute" src="<?= $contact['url'] ?>" alt="img-contact">
-                        <div class="footer-contact bg-lightBlue d-flex justify-content-center position-absolute">
-                            <div class="my-auto mx-auto">
-                                <!-- picto-manquant -->
-                                <p>Téléphone</p>
-                                <p><i class="fas fa-caret-right"></i> +33 (0)5 56 79 03 28</p>
-                            </div>
-                            <div class="my-auto mx-auto">
-                                <!-- picto-manquant -->
-                                <p>Adresse</p>
-                                <p><i class="fas fa-caret-right"></i> 3 Avenue de Marsaou
-                                    33610 Canéjan</p>
+                    <div class="row">
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-6 form p-5">
+                            <?= the_content(); ?>
+                        </div>
+                        <div id="footer-bottom" class="col-12 col-md-12 col-lg-6 p-0" class="col-12 col-md-6 col-lg-6">
+                            <img class="contactimg" src="<?= $contact['url'] ?>" alt="img-contact">
+                            <div class="footer-contact bg-lightBlue d-flex justify-content-center">
+                                <div class="my-auto mx-auto">
+                                    <!-- picto-manquant -->
+                                    <p>Téléphone</p>
+                                    <p><i class="fas fa-caret-right"></i> +33 (0)5 56 79 03 28</p>
+                                </div>
+                                <div class="my-auto mx-auto">
+                                    <!-- picto-manquant -->
+                                    <p>Adresse</p>
+                                    <p><i class="fas fa-caret-right"></i> 3 Avenue de Marsaou
+                                        33610 Canéjan</p>
+                                </div>
                             </div>
                         </div>
                     </div>
-
                 </div>
             </div>
         </div>

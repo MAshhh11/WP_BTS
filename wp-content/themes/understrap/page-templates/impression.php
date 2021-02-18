@@ -19,12 +19,12 @@ get_header();
 ?>
 <div class="container-fluid">
     <div class="row contact-main-img" style="background-image:url(<?= get_the_post_thumbnail_url(); ?>)">
-        <div class="col-6 offset-6  quote position-relative">
+        <div class="col-6 offset-6  quote">
             <div class="row">
-                <p class="position-absolute">"Nous sommes ce que nous répétons chaque jour"</p>
+                <p class="">"Nous sommes ce que nous répétons chaque jour"</p>
             </div>
             <div class="row col-2 offset-10">
-                <p class="author position-absolute">Aristote</p>
+                <p class="author">Aristote</p>
             </div>
         </div>
     </div>
@@ -48,7 +48,7 @@ get_header();
                 <div class="col-12 bg-white main">
                     <div class="container">
                         <div class="row mt-5 ">
-                            <div class="col-lg-6 mx-auto main-content mt-5 p-5">
+                            <div class="col-12 col-sm-12 col-md-10 col-lg-6 mx-auto main-content mt-5 p-5">
                                 <?= the_content(); ?>
                             </div>
                         </div>
@@ -71,7 +71,7 @@ get_header();
                         <div class="row">
                             <!-- SERVICES IMPRESSION -->
                             <ul class="nav nav-pills mb-3 position-relative" id="pills-tab" role="tablist">
-                                <li class="nav-item active col-12 col-lg-3 imgservice" role="presentation">
+                                <li class="nav-item active col-12 col-sm-6 ol-md-6 col-lg-3 imgservice" role="presentation">
                                     <a class="nav-link" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">
                                         <img src="<?= $serviceimpression[0]['image']['url'] ?>" alt="service imp">
                                         <div class="position-absolute title">
@@ -79,7 +79,7 @@ get_header();
                                         </div>
                                     </a>
                                 </li>
-                                <li class="nav-item col-12 col-lg-3 position-relative imgservice" role="presentation">
+                                <li class="nav-item col-12 col-sm-6 col-md-6 col-lg-3 position-relative imgservice" role="presentation">
                                     <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">
                                         <img src="<?= $serviceimpression[1]['image']['url'] ?>" alt="service imp">
                                         <div class="position-absolute title">
@@ -87,7 +87,7 @@ get_header();
                                         </div>
                                     </a>
                                 </li>
-                                <li class="nav-item col-12 col-lg-3 position-relative imgservice" role="presentation">
+                                <li class="nav-item col-12 col-sm-6 col-md-6 col-lg-3 position-relative imgservice" role="presentation">
                                     <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">
                                         <img src="<?= $serviceimpression[2]['image']['url'] ?>" alt="service imp">
                                         <div class="position-absolute title">
@@ -95,7 +95,7 @@ get_header();
                                         </div>
                                     </a>
                                 </li>
-                                <li class="nav-item col-12 col-lg-3 position-relative imgservice" role="presentation">
+                                <li class="nav-item col-12 col-sm-6 col-md-6 col-lg-3 position-relative imgservice" role="presentation">
                                     <a class="nav-link" id="pills-last-tab" data-toggle="pill" href="#pills-last" role="tab" aria-controls="pills-last" aria-selected="false">
                                         <img src="<?= $serviceimpression[3]['image']['url'] ?>" alt="service imp">
                                         <div class="position-absolute title">
@@ -109,10 +109,10 @@ get_header();
                                 <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
                                     <div class="container">
                                         <div class="row">
-                                            <div class="col-12 col-lg-4 bg-blue p-5">
+                                            <div class="col-12 col-sm-12 col-md-4 col-lg-4 bg-blue p-5">
                                                 <p class="service-info"><?= $serviceimpression2[0]['texte']; ?></p>
                                             </div>
-                                            <div class="gallerie col-12 col-lg-8">
+                                            <div class="gallerie col-12 col-sm-12 col-md-8 col-lg-8">
                                                 <div class="owl-carousel owl-carouselinfo owl-theme">
                                                     <div class="item">
                                                         <img src="<?= $serviceimpression2[0]['galerie'][0]['url'] ?>" alt="service imp">
@@ -131,10 +131,10 @@ get_header();
                                 <div class="tab-pane fade blocservices" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
                                     <div class="container">
                                         <div class="row">
-                                            <div class="col-12 col-lg-4 bg-blue p-5">
+                                            <div class="col-12 col-sm-12 col-lg-4 bg-blue p-5">
                                                 <p class="service-info"><?= $serviceimpression2[1]['texte']; ?></p>
                                             </div>
-                                            <div class="gallerie col-12 col-lg-8">
+                                            <div class="gallerie col-12 col-sm-12 col-lg-8">
                                                 <div class="owl-carousel owl-carouselinfo owl-theme">
                                                     <div class="item">
                                                         <img src="<?= $serviceimpression2[1]['galerie'][0]['url'] ?>" alt="service imp">
@@ -153,10 +153,10 @@ get_header();
                                 <div class="tab-pane fade blocservices" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
                                     <div class="container">
                                         <div class="row">
-                                            <div class="col-12 col-lg-4 bg-blue p-5">
+                                            <div class="col-12 col-sm-12 col-lg-4 bg-blue p-5">
                                                 <p class="service-info"><?= $serviceimpression2[2]['texte']; ?></p>
                                             </div>
-                                            <div class="gallerie col-12 col-lg-8">
+                                            <div class="gallerie col-12 col-sm-12 col-lg-8">
                                                 <div class="owl-carousel owl-carouselinfo owl-theme">
                                                     <div class="item">
                                                         <img src="<?= $serviceimpression2[2]['galerie'][0]['url'] ?>" alt="service imp">
@@ -175,10 +175,10 @@ get_header();
                                 <div class="tab-pane fade blocservices" id="pills-last" role="tabpanel" aria-labelledby="pills-last-tab">
                                     <div class="container">
                                         <div class="row">
-                                            <div class="col-12 col-lg-4 bg-blue p-5">
+                                            <div class="col-12 col-sm-4 col-md-4 col-lg-4 bg-blue p-5">
                                                 <p class="service-info"><?= $serviceimpression2[3]['texte']; ?></p>
                                             </div>
-                                            <div class="gallerie col-12 col-lg-8">
+                                            <div class="gallerie col-12 col-sm-8 col-md-8 col-lg-8">
                                                 <div class="owl-carousel owl-carouselinfo owl-theme">
                                                     <div class="item">
                                                         <img src="<?= $serviceimpression2[3]['galerie'][0]['url'] ?>" alt="service imp">
@@ -214,7 +214,7 @@ get_header();
                 <div class="col-12 bg-white mainsolution">
                     <div class="container">
                         <div class="row mt-5 ">
-                            <div class="col-lg-6 mx-auto main-content mt-5 p-5">
+                            <div class="col-12 col-md-8 col-lg-6 mx-auto main-content mt-5 p-5">
                                 <p>
                                     <?= $solutions ?>
                                 </p>
@@ -232,7 +232,7 @@ get_header();
                 <div class="container mt-5">
                     <div class="row mt-5">
                         <ul class="nav nav-pills mb-3 position-relative" id="pills-tab" role="tablist">
-                            <li class="nav-item active col-12 col-lg-6 imgservices mt-5" role="presentation">
+                            <li class="nav-item active col-12 col-sm-6 col-md-6 col-lg-6 imgservices mt-5" role="presentation">
                                 <a class="nav-link" id="pills-ged-tab" data-toggle="pill" href="#pills-ged" role="tab" aria-controls="pills-ged" aria-selected="true">
                                     <img src="<?= $servicesolution[0]['image']['url'] ?>" alt="service info">
                                     <div class="position-absolute title">
@@ -240,7 +240,7 @@ get_header();
                                     </div>
                                 </a>
                             </li>
-                            <li class="nav-item col-12 col-lg-6 position-relative imgservices mt-5" role="presentation">
+                            <li class="nav-item col-12 col-sm-6 col-md-6 col-md-3 col-lg-6 position-relative imgservices mt-5" role="presentation">
                                 <a class="nav-link" id="pills-logiciel-tab" data-toggle="pill" href="#pills-logiciel" role="tab" aria-controls="pills-logiciel" aria-selected="false">
                                     <img src="<?= $servicesolution[1]['image']['url'] ?>" alt="service info">
                                     <div class="position-absolute title">
@@ -253,7 +253,7 @@ get_header();
                         <div class="tab-content blocservices" id="pills-tabContent">
                             <div class="tab-pane fade show active" id="pills-ged" role="tabpanel" aria-labelledby="pills-ged-tab">
                                 <div class="container col-12">
-                                    <div class="row bg-blue  p-5">
+                                    <div class="row bg-blue p-5">
                                         <div class="">
                                             <p class="p1"><?= $servicesolution3[0]['texte'] ?></p>
                                         </div>
@@ -261,7 +261,7 @@ get_header();
                                     <div class="row d-flex justify-content-center bg-white p-5">
 
                                         <?php foreach ($servicesolution2 as $soluce2) : ?>
-                                            <div class="col-3">
+                                            <div class="col-12 col-sm-6 col-md-6 col-lg-3">
                                                 <div class="col-12">
                                                     <img class="picto-soluce" src="<?= $soluce2['picto']['url'] ?>" alt="picto" style="width:50%;">
                                                 </div>
@@ -289,7 +289,7 @@ get_header();
                                     <div class="row bg-white justify-content-center p-5">
 
                                         <?php foreach ($servicesolution4 as $soluce4) : ?>
-                                            <div class="col-3">
+                                            <div class="col-12 col-sm-6 col-md-6 col-lg-3">
                                                 <div class="col-12">
                                                     <img class="picto-soluce" src="<?= $soluce4['picto']['url'] ?>" alt="picto" style="width:50%;">
                                                 </div>

@@ -1,0 +1,146 @@
+/*************** RESPONSIVE ***************/
+
+/* Small devices (landscape phones, 576px and up) */
+
+@media (min-width: 576px) {
+  /* *** HOMEPAGE *** */
+  #bts-logo {
+    width: 30%;
+  }
+  .main {
+    height: 600px;
+  }
+  .priorities {
+    height: 1000px;
+  }
+  .BlockHomepage3 {
+    height: 600px;
+  }
+  .contactimg {
+    display: none;
+  }
+  /* *** IMPRESSION *** */
+  .BlockImpression2 {
+    height: 1400px;
+  }
+  .ImpressionSolutions2 {
+    height: 1500px;
+  }
+  /* *** TELEPHONIE *** */
+
+  .TelephonieBlock {
+    height: 1100px;
+  }
+  /* *** INFORMATIQUE *** */
+  .BlockInfo2 {
+    height: 1600px;
+  }
+  /* *** CONTACT *** */
+  .BlockContact2 {
+    height: 600px;
+  }
+  /* *** SAV *** */
+  .BlocSav {
+    height: 700px;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+
+@media (min-width: 768px) {
+  /* *** HOMEPAGE *** */
+  #bts-logo {
+    width: 60%;
+  }
+  .main {
+    height: 600px;
+  }
+  .priorities {
+    height: 1000px;
+  }
+  .BlockHomepage3 {
+    height: 900px;
+  }
+  .contactimg {
+    display: none;
+  }
+  /* *** IMPRESSION *** */
+  .BlockImpression2 {
+    height: 1200px;
+  }
+  .ImpressionSolutions2 {
+    height: 1500px;
+  }
+  /* *** TELEPHONIE *** */
+
+  .TelephonieBlock {
+    height: 900px;
+  }
+  /* *** INFORMATIQUE *** */
+  .BlockInfo2 {
+    height: 900px;
+  }
+  /* *** CONTACT *** */
+  .BlockContact2 {
+    height: 600px;
+  }
+  /* *** SAV *** */
+  .BlocSav {
+    height: 200px;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+
+@media (min-width: 992px) {
+  /* *** HOMEPAGE *** */
+  #bts-logo {
+    width: 40%;
+  }
+  .main {
+    height: 600px;
+  }
+  .priorities {
+    height: 800px;
+  }
+  .BlockHomepage3 {
+    height: 400px;
+  }
+  .contactimg {
+    display: block;
+  }
+  /* *** IMPRESSION *** */
+  .BlockImpression2 {
+    height: 900px;
+  }
+  .ImpressionSolutions2 {
+    height: 1000px;
+  }
+  /* *** TELEPHONIE *** */
+
+  .TelephonieBlock {
+    height: 700px;
+  }
+  /* *** INFORMATIQUE *** */
+  .BlockInfo2 {
+    height: 700px;
+  }
+  /* *** CONTACT *** */
+  .BlockContact2 {
+    height: 400px;
+  }
+  /* *** SAV *** */
+  .BlocSav {
+    height: 200px;
+  }
+}
+
+/* X-Large devices (large desktops, 1200px and up) */
+
+@media (min-width: 1200px) {
+}
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+
+@media (min-width: 1400px) {
+}

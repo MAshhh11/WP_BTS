@@ -27,17 +27,17 @@ get_header();
 ?>
 <div class="container-fluid">
 	<div class="row main-image" style="background-image:url(<?= get_the_post_thumbnail_url(); ?>)">
-		<div class="col-4 offset-8  quote position-relative">
+		<div class="col-12 col-lg-4 quote">
 			<div class="row">
-				<p class="position-absolute">"Lorem ipsum dolor sit, amet consectetur armor elit"</p>
+				<p class="">"Lorem ipsum dolor sit, amet consectetur armor elit"</p>
 			</div>
-			<div class="row col-2 offset-10">
-				<p class="author position-absolute">Auteur</p>
+			<div class="row col-12 col-lg-2">
+				<p class="author">Auteur</p>
 			</div>
 		</div>
 	</div>
 	<div class="row">
-		<div class="col-12 bg-white main">
+		<div class="col-12 col-sm-12 col-md-12 col-lg-12 bg-white main">
 			<div class="container">
 				<div class="row mt-5 ml-3">
 					<h2><?= the_title() ?></h2>
@@ -46,7 +46,7 @@ get_header();
 					<img src="<?php echo $asset ?>icone_titre.png" alt="logo_titre">
 				</div>
 				<div class="row mt-2 ">
-					<div class="col-lg-6 mx-auto main-content mt-3 p-5">
+					<div class="col-12 col-md-10 col-lg-6 mx-auto main-content mt-3 p-5">
 						<?= the_content(); ?>
 					</div>
 				</div>
@@ -60,14 +60,14 @@ get_header();
 		<div class="col-12 mt-5">
 			<div class="container mt-5">
 				<div class="row mt-5">
-					<div class="col-12 col-lg-3">
+					<div class="col-12 col-sm-12 col-md-6 col-lg-3">
 						<h2>NOS PRIORITÉS</h2>
 						<div class="row ml-5">
 							<img src="<?php echo get_site_url(); ?>/assets/img/icone_titre.png" alt="logo_titre">
 						</div>
 					</div>
 					<?php foreach ($priorities as $priority) : ?>
-						<div class="col-12 col-lg-3 mx-auto">
+						<div class="col-12 col-sm-12 col-md-6  col-lg-3 mx-auto">
 							<img class="pic-priorities mt-3 mb-3" src="<?= $priority['icone']['url']; ?>" style="width:30%;" alt="img_priorities">
 							<p><?= $priority['content']; ?></p>
 						</div>
@@ -148,33 +148,33 @@ get_header();
 				<div class="row">
 					<div class="col-12">
 						<div class="container mt-5 d-flex justify-content-center main-content">
-							<div class=" col-12 col-lg-6 form p-5">
-								<p class="accroche">Vous recherchez un partenaire de confiance et vous avez besoin d’une réponse rapide
-									concernant l’achat, la location ou l’optimisation de votre parc bureautique ?</p>
-								<p>
-									Nos conseillers vous répondent.
-								</p>
-								<?php echo do_shortcode('[contact-form-7 id="5" title="Formulaire de contact 1"]'); ?>
-							</div>
-							<div class=" col-12 col-lg-6 position-relative">
-								<img class="contactimg position-absolute" src="<?= $contact['url'] ?>" alt="img-contact">
-								<div class="footer-contact bg-lightBlue d-flex justify-content-center position-absolute">
-									<div class="my-auto mx-auto">
-										<!-- picto-manquant -->
-										<p>Téléphone</p>
-										<p><i class="fas fa-caret-right"></i> +33 (0)5 56 79 03 28</p>
-									</div>
-									<div class="my-auto mx-auto">
-										<!-- picto-manquant -->
-										<p>Adresse</p>
-										<p><i class="fas fa-caret-right"></i> 3 Avenue de Marsaou
-											33610 Canéjan</p>
+							<div class="row">
+								<div class=" col-12 col-md-12 col-lg-6 form p-5">
+									<p class="accroche">Vous recherchez un partenaire de confiance et vous avez besoin d’une réponse rapide
+										concernant l’achat, la location ou l’optimisation de votre parc bureautique ?</p>
+									<p>
+										Nos conseillers vous répondent.
+									</p>
+									<?php echo do_shortcode('[contact-form-7 id="5" title="Formulaire de contact 1"]'); ?>
+								</div>
+								<div id="footer-bottom" class="col-12 col-md-12 col-lg-6 p-0">
+									<img class="contactimg " src="<?= $contact['url'] ?>" alt="img-contact">
+									<div class="footer-contact bg-lightBlue d-flex justify-content-center ">
+										<div class="my-auto mx-auto">
+											<!-- picto-manquant -->
+											<p>Téléphone</p>
+											<p><i class="fas fa-caret-right"></i> +33 (0)5 56 79 03 28</p>
+										</div>
+										<div class="my-auto mx-auto">
+											<!-- picto-manquant -->
+											<p>Adresse</p>
+											<p><i class="fas fa-caret-right"></i> 3 Avenue de Marsaou
+												33610 Canéjan</p>
+										</div>
 									</div>
 								</div>
 							</div>
-
 						</div>
-
 					</div>
 				</div>
 			</div>

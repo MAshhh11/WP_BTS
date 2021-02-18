@@ -25,6 +25,7 @@ $container = get_theme_mod('understrap_container_type');
 
 	<link rel="stylesheet" href="<?php echo get_site_url(); ?>/assets/css/owl.carousel.min.css" />
 	<link rel="stylesheet" href="<?php echo get_site_url(); ?>/assets/css/style.css" />
+	<link rel="stylesheet" href="<?php echo get_site_url(); ?>/assets/css/responsive.css" />
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
 </head>
 
@@ -64,7 +65,7 @@ $container = get_theme_mod('understrap_container_type');
 
 										<?php else : ?>
 
-											<a class="navbar-brand" rel="home" href="<?php echo esc_url(home_url('/')); ?>" title="<?php echo esc_attr(get_bloginfo('name', 'display')); ?>" itemprop="url"><img src="<?php echo $asset ?>logo@2x.png" alt="logo_bts" style="width:40%;"></a>
+											<a class="navbar-brand" rel="home" href="<?php echo esc_url(home_url('/')); ?>" title="<?php echo esc_attr(get_bloginfo('name', 'display')); ?>" itemprop="url"><img id="bts-logo" src="<?php echo $asset ?>logo@2x.png" alt="logo_bts"></a>
 
 										<?php endif; ?>
 
