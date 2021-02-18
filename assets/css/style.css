@@ -121,7 +121,6 @@ a {
 }
 .navbar-dark .navbar-nav .nav-link {
   color: #202020;
-  font-size: 1em;
   position: relative;
   transition: all 0.5s;
 }

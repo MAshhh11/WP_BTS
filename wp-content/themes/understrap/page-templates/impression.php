@@ -96,7 +96,7 @@ get_header();
                                     </a>
                                 </li>
                                 <li class="nav-item col-12 col-lg-3 position-relative imgservice" role="presentation">
-                                    <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">
+                                    <a class="nav-link" id="pills-last-tab" data-toggle="pill" href="#pills-last" role="tab" aria-controls="pills-last" aria-selected="false">
                                         <img src="<?= $serviceimpression[3]['image']['url'] ?>" alt="service imp">
                                         <div class="position-absolute title">
                                             <h4><?= $serviceimpression[3]['title']; ?></h4>
@@ -172,7 +172,7 @@ get_header();
                                         </div>
                                     </div>
                                 </div>
-                                <div class="tab-pane fade blocservices" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                                <div class="tab-pane fade blocservices" id="pills-last" role="tabpanel" aria-labelledby="pills-last-tab">
                                     <div class="container">
                                         <div class="row">
                                             <div class="col-12 col-lg-4 bg-blue p-5">
