@@ -1,11 +1,79 @@
 /*************** RESPONSIVE ***************/
 
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-width: 575px) {
+  /* *** HOMEPAGE *** */
+  #bts-logo {
+    width: 40%;
+  }
+  .quote {
+    left: 0%;
+  }
+  p {
+    font-size: 18px;
+  }
+  .main {
+    height: 900px;
+  }
+  .priorities {
+    height: 1200px;
+  }
+  .BlockHomepage3 {
+    height: 700px;
+  }
+  .contactimg {
+    display: none;
+  }
+  /* *** IMPRESSION *** */
+  .BlockImpression {
+    height: 500px;
+  }
+  .BlockImpression2 {
+    height: 1300px;
+  }
+  .ImpressionSolutions {
+    height: 1400px;
+  }
+  .ImpressionSolutions2 {
+    height: 1400px;
+  }
+  .gallerie {
+    display: none;
+  }
+  /* *** TELEPHONIE *** */
+
+  .TelephonieBlock {
+    height: 1800px;
+  }
+  p.p1 {
+    font-size: 12px;
+  }
+  p.p2 {
+    font-size: 18px;
+  }
+  /* *** INFORMATIQUE *** */
+  .BlockInfo2 {
+    height: 1600px;
+  }
+  /* *** CONTACT *** */
+  .BlockContact2 {
+    height: 600px;
+  }
+  /* *** SAV *** */
+  .BlocSav {
+    height: 700px;
+  }
+}
+
 /* Small devices (landscape phones, 576px and up) */
 
 @media (min-width: 576px) {
   /* *** HOMEPAGE *** */
   #bts-logo {
     width: 30%;
+  }
+  .quote {
+    left: 0%;
   }
   .main {
     height: 600px;
@@ -50,7 +118,10 @@
 @media (min-width: 768px) {
   /* *** HOMEPAGE *** */
   #bts-logo {
-    width: 60%;
+    width: 50%;
+  }
+  .quote {
+    left: 0%;
   }
   .main {
     height: 600px;
@@ -97,6 +168,9 @@
   #bts-logo {
     width: 40%;
   }
+  .quote {
+    left: 50%;
+  }
   .main {
     height: 600px;
   }
@@ -138,9 +212,95 @@
 /* X-Large devices (large desktops, 1200px and up) */
 
 @media (min-width: 1200px) {
+  /* *** HOMEPAGE *** */
+  #bts-logo {
+    width: 40%;
+  }
+  .quote {
+    left: 60%;
+  }
+  .main {
+    height: 600px;
+  }
+  .priorities {
+    height: 700px;
+  }
+  .BlockHomepage3 {
+    height: 400px;
+  }
+  .contactimg {
+    display: block;
+  }
+  /* *** IMPRESSION *** */
+  .BlockImpression2 {
+    height: 900px;
+  }
+  .ImpressionSolutions2 {
+    height: 1100px;
+  }
+  /* *** TELEPHONIE *** */
+
+  .TelephonieBlock {
+    height: 700px;
+  }
+  /* *** INFORMATIQUE *** */
+  .BlockInfo2 {
+    height: 700px;
+  }
+  /* *** CONTACT *** */
+  .BlockContact2 {
+    height: 400px;
+  }
+  /* *** SAV *** */
+  .BlocSav {
+    height: 200px;
+  }
 }
 
 /* XX-Large devices (larger desktops, 1400px and up) */
 
 @media (min-width: 1400px) {
+  /* *** HOMEPAGE *** */
+  #bts-logo {
+    width: 60%;
+  }
+  .quote {
+    left: 60%;
+  }
+  .main {
+    height: 600px;
+  }
+  .priorities {
+    height: 700px;
+  }
+  .BlockHomepage3 {
+    height: 400px;
+  }
+  .contactimg {
+    display: block;
+  }
+  /* *** IMPRESSION *** */
+  .BlockImpression2 {
+    height: 900px;
+  }
+  .ImpressionSolutions2 {
+    height: 1100px;
+  }
+  /* *** TELEPHONIE *** */
+
+  .TelephonieBlock {
+    height: 700px;
+  }
+  /* *** INFORMATIQUE *** */
+  .BlockInfo2 {
+    height: 700px;
+  }
+  /* *** CONTACT *** */
+  .BlockContact2 {
+    height: 400px;
+  }
+  /* *** SAV *** */
+  .BlocSav {
+    height: 200px;
+  }
 }

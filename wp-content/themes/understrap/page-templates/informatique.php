@@ -19,11 +19,11 @@ get_header();
 ?>
 <div class="container-fluid">
 	<div class="row main-image" style="background-image:url(<?= get_the_post_thumbnail_url(); ?>)">
-		<div class="col-12 quote">
+		<div class="col-12 col-lg-4 quote p-5">
 			<div class="row">
-				<p class="">"Lorem ipsum dolor sit, amet consectetur armor elit"</p>
+				<p class="">"Lorem ipsum dolor sit, amet consectetur armorem elit"</p>
 			</div>
-			<div class="row col-12">
+			<div class="row col-12 col-lg-4">
 				<p class="author">Auteur</p>
 			</div>
 		</div>

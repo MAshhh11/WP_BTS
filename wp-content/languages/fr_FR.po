@@ -2920,7 +2920,7 @@ msgstr "Ordre"
 msgid "Current"
 msgstr "Actuel"
 
-#: wp-includes/js/dist/components.js:40107
+#: wp-includes/js/dist/components.js:40129
 #: wp-admin/includes/edit-tag-messages.php:14
 msgid "Item added."
 msgstr "Élément ajouté."
@@ -4989,7 +4989,7 @@ msgid "Suggested image dimensions: %1$s by %2$s pixels."
 msgstr "Dimensions suggérées de l’image : %1$s par %2$s pixels."
 
 #: wp-includes/script-loader.php:852 wp-includes/functions.php:2678
-#: wp-includes/js/dist/media-utils.js:1146 wp-admin/includes/file.php:857
+#: wp-includes/js/dist/media-utils.js:1151 wp-admin/includes/file.php:857
 msgid "Sorry, this file type is not permitted for security reasons."
 msgstr "Désolé, ce type de fichier n’est pas autorisé pour des raisons de sécurité."
 
@@ -7370,7 +7370,7 @@ msgid "%1$s %2$s %3$s %4$s Feed"
 msgstr "Flux pour %1$s %2$s %3$s %4$s"
 
 #: wp-includes/media-template.php:199 wp-includes/media-template.php:347
-#: wp-includes/functions.php:6622 wp-includes/js/dist/components.js:41287
+#: wp-includes/functions.php:6622 wp-includes/js/dist/components.js:41309
 msgid "Close dialog"
 msgstr "Fermez la boite de dialogue"
 
@@ -9086,7 +9086,7 @@ msgstr "Corbeille"
 msgid "Edit Selection"
 msgstr "Modifier la sélection"
 
-#: wp-includes/script-loader.php:1709 wp-includes/js/dist/components.js:41778
+#: wp-includes/script-loader.php:1709 wp-includes/js/dist/components.js:41800
 msgid "Previous"
 msgstr "Précédent"
 
@@ -9540,7 +9540,7 @@ msgstr "Attribut « Title » de l’image"
 msgid "Advanced Options"
 msgstr "Options avancées"
 
-#: wp-includes/media-template.php:1143 wp-includes/js/dist/components.js:39211
+#: wp-includes/media-template.php:1143 wp-includes/js/dist/components.js:39233
 msgid "Custom Size"
 msgstr "Taille personnalisée"
 
@@ -9964,7 +9964,7 @@ msgstr "Créer une nouvelle liste de lecture"
 #: wp-includes/customize/class-wp-customize-themes-panel.php:70
 #: wp-includes/customize/class-wp-customize-nav-menus-panel.php:72
 #: wp-includes/class-wp-customize-nav-menus.php:1144
-#: wp-includes/js/dist/components.js:42383
+#: wp-includes/js/dist/components.js:42405
 #: wp-includes/js/dist/edit-post.js:5698 wp-admin/includes/ms.php:49
 #: wp-admin/theme-install.php:59
 msgid "Back"
@@ -11027,7 +11027,7 @@ msgid "Could not insert term relationship into the database."
 msgstr "Impossible d’insérer le terme associé dans la base de données."
 
 #: wp-includes/media-template.php:756 wp-includes/js/dist/components.js:30186
-#: wp-includes/js/dist/components.js:41091 wp-admin/theme-install.php:209
+#: wp-includes/js/dist/components.js:41113 wp-admin/theme-install.php:209
 #: wp-admin/theme-install.php:232 wp-admin/js/color-picker.js:154
 msgid "Clear"
 msgstr "Effacer"
@@ -12891,7 +12891,7 @@ msgstr "Votre nouvel identifiant est %s"
 
 #: wp-includes/script-loader.php:1708
 #: wp-includes/class-wp-customize-nav-menus.php:1110 wp-signup.php:621
-#: wp-includes/js/dist/components.js:41781
+#: wp-includes/js/dist/components.js:41803
 msgid "Next"
 msgstr "Suivant"
 
@@ -13576,7 +13576,7 @@ msgstr "Alignement"
 msgid "Loop"
 msgstr "Répéter"
 
-#: wp-includes/js/dist/components.js:40997
+#: wp-includes/js/dist/components.js:41019
 #: wp-admin/includes/ajax-actions.php:2183
 msgid "Type"
 msgstr "Type"
@@ -14563,8 +14563,8 @@ msgstr "« Page précédente"
 #. translators: 'Label. Used to signify a layout property (eg: margin, padding)
 #. will apply uniformly to all screensizes.'
 #: wp-includes/js/dist/components.js:26537
-#: wp-includes/js/dist/components.js:43327
-#: wp-includes/js/dist/components.js:43346
+#: wp-includes/js/dist/components.js:43349
+#: wp-includes/js/dist/components.js:43368
 #: wp-includes/js/dist/block-editor.js:38568 wp-admin/export.php:187
 #: wp-admin/export.php:199 wp-admin/export.php:224 wp-admin/export.php:246
 #: wp-admin/export.php:271
@@ -14623,7 +14623,7 @@ msgstr "Titre :"
 #: wp-includes/customize/class-wp-customize-media-control.php:258
 #: wp-includes/class-wp-customize-manager.php:5201
 #: wp-includes/js/dist/components.js:35921
-#: wp-includes/js/dist/components.js:39130
+#: wp-includes/js/dist/components.js:39135
 #: wp-includes/js/dist/block-library.js:22039
 #: wp-includes/js/dist/block-library.js:25791 wp-admin/js/color-picker.js:149
 msgid "Default"
@@ -15358,7 +15358,7 @@ msgstr "Cible"
 #: wp-includes/widgets/class-wp-widget-categories.php:47
 #: wp-includes/category-template.php:546
 #: wp-includes/theme-compat/sidebar.php:129
-#: wp-includes/js/dist/components.js:43332
+#: wp-includes/js/dist/components.js:43354
 #: wp-includes/js/dist/block-library.js:11642
 #: wp-includes/js/dist/block-library.js:11680
 #: wp-includes/js/dist/block-library.js:11721
@@ -15549,7 +15549,7 @@ msgid "URL"
 msgstr "URL"
 
 #: wp-includes/class-wp-editor.php:1209 wp-includes/theme-compat/sidebar.php:29
-#: wp-includes/js/dist/components.js:43345 wp-includes/js/dist/editor.js:7535
+#: wp-includes/js/dist/components.js:43367 wp-includes/js/dist/editor.js:7535
 #: wp-admin/includes/class-wp-debug-data.php:1083
 #: wp-admin/includes/class-wp-debug-data.php:1178
 #: wp-admin/includes/class-theme-installer-skin.php:241

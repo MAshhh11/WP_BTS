@@ -19,11 +19,11 @@ get_header();
 ?>
 <div class="container-fluid">
     <div class="row contact-main-img" style="background-image:url(<?= get_the_post_thumbnail_url(); ?>)">
-        <div class="col-6 offset-6  quote">
+        <div class="col-12 col-lg-4 quote p-5">
             <div class="row">
                 <p class="">"Nous sommes ce que nous répétons chaque jour"</p>
             </div>
-            <div class="row col-2 offset-10">
+            <div class="row col-12 col-lg-4">
                 <p class="author">Aristote</p>
             </div>
         </div>
@@ -59,7 +59,7 @@ get_header();
                         <h3 class=" mx-auto mt-5 mb-3">DÉCOUVREZ NOS MATÉRIELS D’IMPRESSION ADAPTÉS À VOTRE MÉTIER </h3>
                     </div>
                     <div class="row mx-auto ">
-                        <div class="col-3 button bg-lightBlue mx-auto mb-5 mt-5 p-3">
+                        <div class="col-6 col-lg-3 button bg-lightBlue mx-auto mb-5 mt-5 p-3">
                             <a href=""><i class="fas fa-caret-right"></i> BESOIN D'UNE REPONSE RAPIDE ?</a>
                         </div>
                     </div>

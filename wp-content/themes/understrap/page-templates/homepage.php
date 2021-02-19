@@ -27,11 +27,11 @@ get_header();
 ?>
 <div class="container-fluid">
 	<div class="row main-image" style="background-image:url(<?= get_the_post_thumbnail_url(); ?>)">
-		<div class="col-12 col-lg-4 quote">
+		<div class="col-12 col-lg-4 quote  p-5">
 			<div class="row">
-				<p class="">"Lorem ipsum dolor sit, amet consectetur armor elit"</p>
+				<p class="">"Lorem ipsum dolor sit, amet consectetur armorem elit"</p>
 			</div>
-			<div class="row col-12 col-lg-2">
+			<div class="row col-12 col-lg-4">
 				<p class="author">Auteur</p>
 			</div>
 		</div>
@@ -67,7 +67,7 @@ get_header();
 						</div>
 					</div>
 					<?php foreach ($priorities as $priority) : ?>
-						<div class="col-12 col-sm-12 col-md-6  col-lg-3 mx-auto">
+						<div class="col-12 col-sm-6 col-md-6 col-lg-3 mx-auto">
 							<img class="pic-priorities mt-3 mb-3" src="<?= $priority['icone']['url']; ?>" style="width:30%;" alt="img_priorities">
 							<p><?= $priority['content']; ?></p>
 						</div>
@@ -97,7 +97,7 @@ get_header();
 				<div class="row">
 				</div>
 				<div class="row solutionRow">
-					<div class="col-12 col-lg-6 solutionBloc1 pr-0">
+					<div class="col-12 col-sm-6 col-md-6 col-lg-6 solutionBloc1 pr-0">
 						<div class="solutionContainer" style="background: url(<?= $solutions[0]['image']['url']; ?>)">
 							<div class="solutionTitle">
 								<h2><?= $solutions[0]['title']; ?></h2>
@@ -109,7 +109,7 @@ get_header();
 							</div>
 						</div>
 					</div>
-					<div class="col-12 col-lg-6 solutionBloc2 pl-0">
+					<div class="col-12 col-sm-6 col-md-6 col-lg-6 solutionBloc2 pl-0">
 						<div class="solutionContainer" style="background: url(<?= $solutions[1]['image']['url']; ?>)">
 							<div class="solutionTitle">
 								<h2><?= $solutions[1]['title']; ?></h2>

@@ -19,11 +19,11 @@ get_header();
 ?>
 <div class="container-fluid">
 	<div class="row main-image" style="background-image:url(<?= get_the_post_thumbnail_url(); ?>)">
-		<div class="col-4 quote">
+		<div class="col-12 col-lg-4 quote p-5">
 			<div class="row">
-				<p class="">"Lorem ipsum dolor sit, amet consectetur armor elit"</p>
+				<p class="">"Lorem ipsum dolor sit, amet consectetur armorem elit"</p>
 			</div>
-			<div class="row col-2">
+			<div class="row col-12 col-lg-4">
 				<p class="author ">Auteur</p>
 			</div>
 		</div>
@@ -58,13 +58,13 @@ get_header();
 						</div>
 					<?php endforeach; ?>
 					<div class="col-12 col-lg-12 bg-blue blockPartenaires2">
-						<p>
+						<p class="p1">
 							<?= get_field('content') ?>
 						</p>
 					</div>
 				</div>
 				<div class="row">
-					<div class="col-6 col-md-6 col-lg-4 button bg-lightBlue mx-auto mt-5 p-3">
+					<div class="col-12 col-md-6 col-lg-4 button bg-lightBlue mx-auto mt-5 p-3">
 						<a href=""><i class="fas fa-caret-right"></i> N’HÉSITEZ PAS À NOUS CONTACTER</a>
 					</div>
 				</div>

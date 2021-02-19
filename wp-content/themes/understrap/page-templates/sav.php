@@ -19,11 +19,11 @@ get_header();
 ?>
 <div class="container-fluid">
     <div class="row sav-main-img" style="background-image:url(<?= get_the_post_thumbnail_url(); ?>)">
-        <div class="col-12 quote">
+        <div class="col-12 col-lg-4 quote p-5">
             <div class="row">
                 <p class="">"Faire simple est probablement l’objectif le plus sophistiqué du monde"</p>
             </div>
-            <div class="row col-12">
+            <div class="row col-12 col-lg-2">
                 <p class="author">Steve Jobs</p>
             </div>
         </div>
@@ -50,7 +50,7 @@ get_header();
                         <div class="bloc-body bg-white py-3 px-3">
                             <img class="picto mt-3 mb-3" class="col-12 mx-auto" src="<?php echo $asset ?>sav_icone_tel@2x.png" alt="sav-tel">
                             <h4>+33 (0)5 56 79 03 28</h4>
-                            <div class="col-6 button bg-lightBlue mx-auto mb-3 mt-5 p-3">
+                            <div class="col-12 col-sm-6 col-md-6 col-lg-6 button bg-lightBlue mx-auto mb-3 mt-5 p-3">
                                 <a href=""><i class="fas fa-caret-right"></i> DEMANDE DE RAPPEL</a>
                             </div>
                         </div>
@@ -62,7 +62,7 @@ get_header();
                         <div class="bloc-body bg-white py-3 px-3">
                             <img class="picto mt-3 mb-3" src="<?php echo $asset ?>sav_icone_assistance@2x.png" alt="sav-tel">
                             <p>Savez-vous que 70% des SAV peuvent-être résolus à distance ?</p>
-                            <div class="col-6 button bg-lightBlue mx-auto mb-3 mt-5 p-3">
+                            <div class="col-12 col-sm-6 col-md-6 col-lg-6 button bg-lightBlue mx-auto mb-3 mt-5 p-3">
                                 <a href=""><i class="fas fa-caret-right"></i> TELEMAINTENANCE</a>
                             </div>
                         </div>

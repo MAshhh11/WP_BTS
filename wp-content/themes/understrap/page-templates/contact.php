@@ -19,11 +19,11 @@ get_header();
 ?>
 <div class="container-fluid">
     <div class="row contact-main-img" style="background-image:url(<?= get_the_post_thumbnail_url(); ?>)">
-        <div class="col-12 quote">
+        <div class="col-12 col-lg-4 quote p-5">
             <div class="row">
                 <p class="">"C’est au contact d’autrui que l’Homme apprend ce qu’il sait"</p>
             </div>
-            <div class="row col-12">
+            <div class="row col-12 col-lg-4">
                 <p class="author">Euripide</p>
             </div>
         </div>
