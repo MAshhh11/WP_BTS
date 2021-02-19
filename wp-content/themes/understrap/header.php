@@ -57,7 +57,7 @@ $container = get_theme_mod('understrap_container_type');
 								<div class="col-12">
 									<a class="skip-link sr-only sr-only-focusable" href="#content"><?php esc_html_e('Skip to content', 'understrap'); ?></a>
 
-									<nav class="navbar navbar-expand-md navbar-dark">
+									<nav class="navbar-light navbar-expand-md navbar">
 
 										<?php if (is_front_page() && is_home()) : ?>
 

@@ -34,8 +34,11 @@
   .ImpressionSolutions {
     height: 1400px;
   }
+  .picto-soluce {
+    width: 0%;
+  }
   .ImpressionSolutions2 {
-    height: 1400px;
+    height: 1550px;
   }
   .gallerie {
     display: none;
