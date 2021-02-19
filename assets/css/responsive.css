@@ -64,7 +64,7 @@
   }
   /* *** SAV *** */
   .BlocSav {
-    height: 700px;
+    height: 600px;
   }
 }
 
@@ -265,7 +265,7 @@
 @media (min-width: 1400px) {
   /* *** HOMEPAGE *** */
   #bts-logo {
-    width: 60%;
+    width: 40%;
   }
   .quote {
     left: 60%;

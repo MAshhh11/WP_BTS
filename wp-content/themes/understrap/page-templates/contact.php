@@ -45,7 +45,7 @@ get_header();
                         </div>
                         <div id="footer-bottom" class="col-12 col-md-12 col-lg-6 p-0" class="col-12 col-md-6 col-lg-6">
                             <img class="contactimg" src="<?= $contact['url'] ?>" alt="img-contact">
-                            <div class="footer-contact bg-lightBlue d-flex justify-content-center">
+                            <div class="footer-contact bg-lightBlue d-flex justify-content-center p-3">
                                 <div class="my-auto mx-auto">
                                     <!-- picto-manquant -->
                                     <p>Téléphone</p>

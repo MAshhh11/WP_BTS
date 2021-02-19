@@ -29,10 +29,10 @@ get_header();
 	<div class="row main-image" style="background-image:url(<?= get_the_post_thumbnail_url(); ?>)">
 		<div class="col-12 col-lg-4 quote  p-5">
 			<div class="row">
-				<p class="">"Lorem ipsum dolor sit, amet consectetur armorem elit"</p>
+				<p class="">"La stratégie d’aujourd’hui conditionne la réussite de demain."</p>
 			</div>
 			<div class="row col-12 col-lg-4">
-				<p class="author">Auteur</p>
+				<!-- <p class="author">Auteur</p> -->
 			</div>
 		</div>
 	</div>
@@ -159,7 +159,7 @@ get_header();
 								</div>
 								<div id="footer-bottom" class="col-12 col-md-12 col-lg-6 p-0">
 									<img class="contactimg " src="<?= $contact['url'] ?>" alt="img-contact">
-									<div class="footer-contact bg-lightBlue d-flex justify-content-center ">
+									<div class="footer-contact bg-lightBlue d-flex justify-content-center p-3">
 										<div class="my-auto mx-auto">
 											<!-- picto-manquant -->
 											<p>Téléphone</p>

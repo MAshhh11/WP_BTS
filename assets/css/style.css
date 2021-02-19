@@ -151,6 +151,7 @@ a {
   height: 500px;
   background-size: cover;
   background-position: center;
+  backdrop-filter: brightness(50%);
 }
 .quote {
   color: white;
@@ -383,7 +384,7 @@ p.p1 {
   background-position: top;
   height: 500px;
   background-size: cover;
-  filter: brightness(50%);
+  backdrop-filter: brightness(50%);
 }
 .contactimg {
   height: 900px;
@@ -434,7 +435,7 @@ p.p1 {
   height: 500px;
   background-size: cover;
   background-position: center;
-  filter: brightness(50%);
+  backdrop-filter: brightness(50%);
 }
 .sav-card {
   height: 500px;
