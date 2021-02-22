@@ -6,6 +6,9 @@
   #bts-logo {
     width: 40%;
   }
+  .navbar .navbar-nav .nav-link:hover::before {
+    visibility: hidden;
+  }
   .quote {
     left: 0%;
   }
@@ -25,11 +28,15 @@
     display: none;
   }
   /* *** IMPRESSION *** */
+  .imgservice a img {
+    width: 480px;
+    height: 300px;
+  }
   .BlockImpression {
     height: 500px;
   }
   .BlockImpression2 {
-    height: 1300px;
+    height: 1500px;
   }
   .ImpressionSolutions {
     height: 1400px;
@@ -54,6 +61,9 @@
   p.p2 {
     font-size: 18px;
   }
+  .main {
+    height: 500px;
+  }
   /* *** INFORMATIQUE *** */
   .BlockInfo2 {
     height: 1600px;
@@ -74,6 +84,9 @@
   /* *** HOMEPAGE *** */
   #bts-logo {
     width: 30%;
+  }
+  .navbar .navbar-nav .nav-link:hover::before {
+    visibility: hidden;
   }
   .quote {
     left: 0%;
@@ -123,6 +136,9 @@
   #bts-logo {
     width: 50%;
   }
+  .navbar .navbar-nav .nav-link:hover::before {
+    visibility: visible;
+  }
   .quote {
     left: 0%;
   }
@@ -139,6 +155,10 @@
     display: none;
   }
   /* *** IMPRESSION *** */
+  .imgservice a img {
+    width: 370px;
+    height: 220px;
+  }
   .BlockImpression2 {
     height: 1200px;
   }
@@ -171,11 +191,14 @@
   #bts-logo {
     width: 40%;
   }
+  .navbar .navbar-nav .nav-link:hover::before {
+    visibility: visible;
+  }
   .quote {
     left: 50%;
   }
   .main {
-    height: 600px;
+    height: 550px;
   }
   .priorities {
     height: 800px;
@@ -219,11 +242,14 @@
   #bts-logo {
     width: 40%;
   }
+  .navbar .navbar-nav .nav-link:hover::before {
+    visibility: visible;
+  }
   .quote {
     left: 60%;
   }
   .main {
-    height: 600px;
+    height: 500px;
   }
   .priorities {
     height: 700px;
@@ -267,11 +293,14 @@
   #bts-logo {
     width: 40%;
   }
+  .navbar .navbar-nav .nav-link:hover::before {
+    visibility: visible;
+  }
   .quote {
     left: 60%;
   }
   .main {
-    height: 600px;
+    height: 500px;
   }
   .priorities {
     height: 700px;

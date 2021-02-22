@@ -58,24 +58,24 @@ get_header();
 						<div class="row">
 							<!-- SERVICES INFO -->
 							<ul class="nav nav-pills mb-3 position-relative" id="pills-tab" role="tablist">
-								<li class="nav-item active col-12 col-sm-6 col-md-4 col-lg-4 imgservices" role="presentation">
-									<a class="nav-link" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">
+								<li class="nav-item active col-12 col-sm-6 col-md-4 col-lg-4 imgservices p-0" role="presentation">
+									<a class="nav-link p-1" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">
 										<img src="<?= $serviceinfos[0]['image']['url'] ?>" alt="service info">
 										<div class="position-absolute title">
 											<h4><?= $serviceinfos[0]['titre']; ?></h4>
 										</div>
 									</a>
 								</li>
-								<li class="nav-item col-12 col-sm-6 col-md-4 col-lg-4 position-relative imgservices" role="presentation">
-									<a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">
+								<li class="nav-item col-12 col-sm-6 col-md-4 col-lg-4 position-relative imgservices p-0" role="presentation">
+									<a class="nav-link p-1" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">
 										<img src="<?= $serviceinfos[1]['image']['url'] ?>" alt="service info">
 										<div class="position-absolute title">
 											<h4><?= $serviceinfos[1]['titre']; ?></h4>
 										</div>
 									</a>
 								</li>
-								<li class="nav-item col-12 col-sm-6 col-md-4 col-lg-4 position-relative imgservices" role="presentation">
-									<a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">
+								<li class="nav-item col-12 col-sm-6 col-md-4 col-lg-4 position-relative imgservices p-0" role="presentation">
+									<a class="nav-link p-1" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">
 										<img src="<?= $serviceinfos[2]['image']['url'] ?>" alt="service info">
 										<div class="position-absolute title">
 											<h4><?= $serviceinfos[2]['titre']; ?></h4>
@@ -88,7 +88,7 @@ get_header();
 								<div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
 									<div class="container">
 										<div class="row">
-											<div class="gallerie col-12 col-sm-12 col-md-4 col-lg-4">
+											<div class="gallerie col-12 col-sm-12 col-md-4 col-lg-4 p-0">
 												<div class="owl-carousel owl-carouselinfo owl-theme">
 													<div class="item">
 														<img src="<?= $serviceinfo2[0]['gallerie'][0]['url'] ?>" alt="service info">

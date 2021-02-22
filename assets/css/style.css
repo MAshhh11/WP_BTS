@@ -76,7 +76,9 @@
 }
 
 /*STYLE GENERAL*/
-
+html {
+  scroll-behavior: smooth;
+}
 h1 {
   font-family: "KoHo-Regular";
   font-size: 30px;
@@ -127,20 +129,21 @@ a {
   position: relative;
   transition: all 0.5s;
 }
-.navbar .navbar-nav .nav-link::after {
+.navbar .navbar-nav .nav-link::before {
+  content: "";
   position: absolute;
+  width: 100%;
+  height: 2px;
   bottom: 0;
   left: 0;
-  right: 0;
-  margin: auto;
   background-color: #202020;
-  color: transparent;
-  width: 0%;
-  content: ".";
-  height: 2px;
+  visibility: hidden;
+  transform: scaleX(0);
+  transition: all 0.5s ease-in-out;
 }
-.navbar .navbar-nav .nav-link:hover::after {
-  width: 50%;
+.navbar .navbar-nav .nav-link:hover::before {
+  visibility: visible;
+  transform: scaleX(1);
 }
 /* **** HOMEPAGE : Nos priorités **** */
 
@@ -216,6 +219,10 @@ a {
   padding: 10px;
   text-decoration: none;
 }
+.solutionHover a:hover {
+  border-radius: 15px;
+  transition: all 0.5s ease-in-out;
+}
 /* **** HOMEPAGE : Nous contacter **** */
 
 .BlockHomepage3 {
@@ -233,7 +240,10 @@ a {
   font-size: 14px;
 }
 /* **** IMPRESSION **** */
-
+.tab-page .nav-link {
+  color: black !important;
+  border-radius: 12px 12px 0px 0px;
+}
 .BlockImpression {
   height: 400px;
 }
@@ -247,13 +257,14 @@ a {
 }
 .imgservice a img {
   filter: brightness(50%);
-  width: 210px;
-  height: 210px;
+  width: 274px;
+  height: 220px;
   object-fit: cover;
 }
 .imgservice a:hover {
-  filter: invert(23%) sepia(52%) saturate(420%) hue-rotate(155deg)
+  -webkit-filter: invert(23%) sepia(52%) saturate(420%) hue-rotate(155deg)
     brightness(97%) contrast(90%);
+  -webkit-transition: 0.8s ease-in-out;
 }
 
 /* le reste du css pour la mise en forme des services/galeries/textes se trouve dans la partie informatique */
@@ -262,11 +273,9 @@ a {
   font-family: "KoHo-Regular";
   font-size: 24px;
 }
-
 p.p2 {
   font-size: 22px;
 }
-
 p.p3 {
   font-size: 16px;
   text-align: center;
@@ -274,7 +283,6 @@ p.p3 {
 .mainsolution {
   height: 400px;
 }
-
 .ImpressionSolutions {
   height: 500px;
 }
@@ -307,19 +315,49 @@ p.p3 {
   font-size: 16px;
   font-family: "Raleway-Regular";
 }
+/* CUSTOMIZE BUTTON */
 .button {
   text-align: center;
+  transition: all 0.5s;
+  position: relative;
+}
+.button:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background-color: rgba(255, 255, 255, 0.1);
+  transition: all 0.3s;
+}
+.button:hover:before {
+  opacity: 0;
+  transform: scale(0.5, 0.5);
+  cursor: pointer;
+}
+.button:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  opacity: 0;
+  transition: all 0.3s;
+  transform: scale(1.2, 1.2);
+}
+.button:hover:after {
+  opacity: 1;
+  transform: scale(1, 1);
+  cursor: pointer;
 }
 .button a {
   font-size: 16px;
   font-family: "KoHo-Light";
   color: white;
-}
-.button:hover {
-  cursor: pointer;
-}
-.button a:hover {
-  text-decoration: none;
 }
 
 /* **** INFORMATIQUE **** */
@@ -343,8 +381,9 @@ p.p3 {
   filter: brightness(50%);
 }
 .imgservices a:hover {
-  filter: invert(23%) sepia(52%) saturate(420%) hue-rotate(155deg)
+  -webkit-filter: invert(23%) sepia(52%) saturate(420%) hue-rotate(155deg)
     brightness(97%) contrast(90%);
+  -webkit-transition: 0.8s ease-in-out;
 }
 .title {
   padding: 30px;
@@ -416,6 +455,10 @@ p.p1 {
   margin-right: auto !important;
   background-color: #4b8497 !important;
   color: white !important;
+}
+.form input[type="submit"]:hover {
+  width: 55% !important;
+  transition: all 0.5s ease-in-out;
 }
 .footer-contact {
   height: 250px;

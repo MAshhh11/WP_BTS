@@ -31,7 +31,7 @@ get_header();
 
     <!-- TAB START -->
 
-    <ul class="nav nav-tabs" id="myTab" role="tablist">
+    <ul class="nav nav-tabs mt-5" id="myTab" role="tablist">
         <li class="tab-page nav-item">
             <a class="nav-link active" id="materiel-tab" data-toggle="tab" href="#materiel" role="tab" aria-controls="materiel" aria-selected="true">MATÉRIEL D’IMPRESSION</a>
         </li>
@@ -70,33 +70,33 @@ get_header();
                     <div class="container">
                         <div class="row">
                             <!-- SERVICES IMPRESSION -->
-                            <ul class="nav nav-pills mb-3 position-relative" id="pills-tab" role="tablist">
-                                <li class="nav-item active col-12 col-sm-6 ol-md-6 col-lg-3 imgservice" role="presentation">
-                                    <a class="nav-link" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">
+                            <ul class="nav nav-pills mb-3 position-relative p-0 d-flex justify-content-center" id="pills-tab" role="tablist">
+                                <li class="nav-item active col-12 col-sm-6 ol-md-6 col-lg-3 imgservice p-0" role="presentation">
+                                    <a class="nav-link p-1" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">
                                         <img src="<?= $serviceimpression[0]['image']['url'] ?>" alt="service imp">
                                         <div class="position-absolute title">
                                             <h4><?= $serviceimpression[0]['title']; ?></h4>
                                         </div>
                                     </a>
                                 </li>
-                                <li class="nav-item col-12 col-sm-6 col-md-6 col-lg-3 position-relative imgservice" role="presentation">
-                                    <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">
+                                <li class="nav-item col-12 col-sm-6 col-md-6 col-lg-3 position-relative imgservice p-0" role="presentation">
+                                    <a class="nav-link p-1" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">
                                         <img src="<?= $serviceimpression[1]['image']['url'] ?>" alt="service imp">
                                         <div class="position-absolute title">
                                             <h4><?= $serviceimpression[1]['title']; ?></h4>
                                         </div>
                                     </a>
                                 </li>
-                                <li class="nav-item col-12 col-sm-6 col-md-6 col-lg-3 position-relative imgservice" role="presentation">
-                                    <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">
+                                <li class="nav-item col-12 col-sm-6 col-md-6 col-lg-3 position-relative imgservice p-0" role="presentation">
+                                    <a class="nav-link p-1" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">
                                         <img src="<?= $serviceimpression[2]['image']['url'] ?>" alt="service imp">
                                         <div class="position-absolute title">
                                             <h4><?= $serviceimpression[2]['title']; ?></h4>
                                         </div>
                                     </a>
                                 </li>
-                                <li class="nav-item col-12 col-sm-6 col-md-6 col-lg-3 position-relative imgservice" role="presentation">
-                                    <a class="nav-link" id="pills-last-tab" data-toggle="pill" href="#pills-last" role="tab" aria-controls="pills-last" aria-selected="false">
+                                <li class="nav-item col-12 col-sm-6 col-md-6 col-lg-3 position-relative imgservice p-0" role="presentation">
+                                    <a class="nav-link p-1" id="pills-last-tab" data-toggle="pill" href="#pills-last" role="tab" aria-controls="pills-last" aria-selected="false">
                                         <img src="<?= $serviceimpression[3]['image']['url'] ?>" alt="service imp">
                                         <div class="position-absolute title">
                                             <h4><?= $serviceimpression[3]['title']; ?></h4>
@@ -112,7 +112,7 @@ get_header();
                                             <div class="col-12 col-sm-12 col-md-4 col-lg-4 bg-blue p-5">
                                                 <p class="service-info"><?= $serviceimpression2[0]['texte']; ?></p>
                                             </div>
-                                            <div class="gallerie col-12 col-sm-12 col-md-8 col-lg-8">
+                                            <div class="gallerie col-12 col-sm-12 col-md-8 col-lg-8 p-0">
                                                 <div class="owl-carousel owl-carouselinfo owl-theme">
                                                     <div class="item">
                                                         <img src="<?= $serviceimpression2[0]['galerie'][0]['url'] ?>" alt="service imp">
@@ -231,17 +231,17 @@ get_header();
                 <?php $servicesolution4 = get_field('servicesolution4'); ?>
                 <div class="container mt-5">
                     <div class="row mt-5">
-                        <ul class="nav nav-pills mb-3 position-relative" id="pills-tab" role="tablist">
-                            <li class="nav-item active col-12 col-sm-6 col-md-6 col-lg-6 imgservices mt-5" role="presentation">
-                                <a class="nav-link" id="pills-ged-tab" data-toggle="pill" href="#pills-ged" role="tab" aria-controls="pills-ged" aria-selected="true">
+                        <ul class="nav nav-pills mb-3 position-relative p-0" id="pills-tab" role="tablist">
+                            <li class="nav-item active col-12 col-sm-6 col-md-6 col-lg-6 imgservices mt-5 p-0" role="presentation">
+                                <a class="nav-link p-1" id="pills-ged-tab" data-toggle="pill" href="#pills-ged" role="tab" aria-controls="pills-ged" aria-selected="true">
                                     <img src="<?= $servicesolution[0]['image']['url'] ?>" alt="service info">
                                     <div class="position-absolute title">
                                         <h4><?= $servicesolution[0]['title']; ?></h4>
                                     </div>
                                 </a>
                             </li>
-                            <li class="nav-item col-12 col-sm-6 col-md-6 col-md-3 col-lg-6 position-relative imgservices mt-5" role="presentation">
-                                <a class="nav-link" id="pills-logiciel-tab" data-toggle="pill" href="#pills-logiciel" role="tab" aria-controls="pills-logiciel" aria-selected="false">
+                            <li class="nav-item col-12 col-sm-6 col-md-6 col-md-3 col-lg-6 position-relative imgservices mt-5 p-0" role="presentation">
+                                <a class="nav-link p-1" id="pills-logiciel-tab" data-toggle="pill" href="#pills-logiciel" role="tab" aria-controls="pills-logiciel" aria-selected="false">
                                     <img src="<?= $servicesolution[1]['image']['url'] ?>" alt="service info">
                                     <div class="position-absolute title">
                                         <h4><?= $servicesolution[1]['title']; ?></h4>
