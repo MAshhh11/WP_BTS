@@ -134,7 +134,7 @@ get_header();
                                             <div class="col-12 col-sm-12 col-lg-4 bg-blue p-5">
                                                 <p class="service-info"><?= $serviceimpression2[1]['texte']; ?></p>
                                             </div>
-                                            <div class="gallerie col-12 col-sm-12 col-lg-8">
+                                            <div class="gallerie col-12 col-sm-12 col-lg-8 p-0">
                                                 <div class="owl-carousel owl-carouselinfo owl-theme">
                                                     <div class="item">
                                                         <img src="<?= $serviceimpression2[1]['galerie'][0]['url'] ?>" alt="service imp">
@@ -156,7 +156,7 @@ get_header();
                                             <div class="col-12 col-sm-12 col-lg-4 bg-blue p-5">
                                                 <p class="service-info"><?= $serviceimpression2[2]['texte']; ?></p>
                                             </div>
-                                            <div class="gallerie col-12 col-sm-12 col-lg-8">
+                                            <div class="gallerie col-12 col-sm-12 col-lg-8 p-0">
                                                 <div class="owl-carousel owl-carouselinfo owl-theme">
                                                     <div class="item">
                                                         <img src="<?= $serviceimpression2[2]['galerie'][0]['url'] ?>" alt="service imp">
@@ -178,7 +178,7 @@ get_header();
                                             <div class="col-12 col-sm-4 col-md-4 col-lg-4 bg-blue p-5">
                                                 <p class="service-info"><?= $serviceimpression2[3]['texte']; ?></p>
                                             </div>
-                                            <div class="gallerie col-12 col-sm-8 col-md-8 col-lg-8">
+                                            <div class="gallerie col-12 col-sm-8 col-md-8 col-lg-8 p-0">
                                                 <div class="owl-carousel owl-carouselinfo owl-theme">
                                                     <div class="item">
                                                         <img src="<?= $serviceimpression2[3]['galerie'][0]['url'] ?>" alt="service imp">

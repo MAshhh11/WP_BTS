@@ -110,7 +110,7 @@ get_header();
 								<div class="tab-pane fade blocservices" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
 									<div class="container">
 										<div class="row">
-											<div class="gallerie col-12 col-lg-4">
+											<div class="gallerie col-12 col-lg-4 p-0">
 												<div class="owl-carousel owl-carouselinfo owl-theme">
 													<div class="item">
 														<img src="<?= $serviceinfo2[1]['gallerie'][0]['url'] ?>" alt="service info">
@@ -132,7 +132,7 @@ get_header();
 								<div class="tab-pane fade blocservices" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
 									<div class="container">
 										<div class="row">
-											<div class="gallerie col-12 col-lg-4">
+											<div class="gallerie col-12 col-lg-4 p-0">
 												<div class="owl-carousel owl-carouselinfo owl-theme">
 													<div class="item">
 														<img src="<?= $serviceinfo2[2]['gallerie'][0]['url'] ?>" alt="service info">

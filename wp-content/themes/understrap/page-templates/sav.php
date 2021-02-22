@@ -37,12 +37,12 @@ get_header();
                 <div class="row ml-5">
                     <img src="<?php echo $asset ?>icone_titre.png" alt="logo_titre">
                 </div>
-                <div class="row mt-5 ml-5 ">
-                    <div class="col-lg-6">
+                <div class="row mt-5 ">
+                    <div class="col-12 col-sm-12 col-md-6 col-lg-6">
                         <?= the_content(); ?>
                     </div>
                 </div>
-                <div class="row mt-2 ">
+                <div class="row mt-2">
                     <div class="col-12 col-sm-12 col-md-6 col-lg-6 sav-card p-5">
                         <div class="bloc-title bg-lightBlue p-3">
                             <h3>PAR TÉLÉPHONE</h3>

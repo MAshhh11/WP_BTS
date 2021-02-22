@@ -39,7 +39,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  transition: transform 0.5s ease;
+  transition: transform 0.8s ease;
 }
 .solutionHover {
   background-color: rgba(74, 131, 150, 0.4);
@@ -118,12 +118,6 @@ a {
   font-family: "KoHo-Regular";
   font-size: 14px;
 }
-.navbar .navbar-nav .nav-link:hover {
-  color: #202020;
-}
-.navbar .navbar-nav .nav-link:visited {
-  color: #202020;
-}
 .navbar .navbar-nav .nav-link {
   color: #202020;
   position: relative;
@@ -144,6 +138,9 @@ a {
 .navbar .navbar-nav .nav-link:hover::before {
   visibility: visible;
   transform: scaleX(1);
+}
+.navbar .navbar-nav .nav-link:visited {
+  color: #202020;
 }
 /* **** HOMEPAGE : Nos priorités **** */
 
@@ -188,11 +185,32 @@ a {
 }
 .priorities a {
   color: white;
-  text-decoration: underline;
   font-family: "KoHo-Light";
   font-size: 24px;
+  text-decoration: none;
 }
-
+.tell-us {
+  color: white;
+  position: relative;
+  transition: all 0.5s;
+}
+.tell-us:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: white;
+  visibility: hidden;
+  transform: scaleX(0);
+  transition: all 0.5s ease-in-out;
+}
+.tell-us:hover::before {
+  visibility: visible;
+  transform: scaleX(1);
+  cursor: pointer;
+}
 /* **** HOMEPAGE : Nos solutions **** */
 
 .nos-solutions {
@@ -216,11 +234,11 @@ a {
   font-family: "KoHo-Light";
   color: white;
   border: 1px solid white;
-  padding: 10px;
+  padding: 8px;
   text-decoration: none;
 }
 .solutionHover a:hover {
-  border-radius: 15px;
+  border-radius: 25px;
   transition: all 0.5s ease-in-out;
 }
 /* **** HOMEPAGE : Nous contacter **** */
@@ -244,6 +262,20 @@ a {
   color: black !important;
   border-radius: 12px 12px 0px 0px;
 }
+/* ANIMATION TAB */
+.tab-pane.active {
+  animation: slide-down 1s ease-out;
+}
+@keyframes slide-down {
+  0% {
+    opacity: 0;
+    transform: translateY(50%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 .BlockImpression {
   height: 400px;
 }
@@ -262,9 +294,9 @@ a {
   object-fit: cover;
 }
 .imgservice a:hover {
-  -webkit-filter: invert(23%) sepia(52%) saturate(420%) hue-rotate(155deg)
+  filter: invert(23%) sepia(52%) saturate(420%) hue-rotate(155deg)
     brightness(97%) contrast(90%);
-  -webkit-transition: 0.8s ease-in-out;
+  transition: 1s ease-in-out;
 }
 
 /* le reste du css pour la mise en forme des services/galeries/textes se trouve dans la partie informatique */
@@ -381,9 +413,9 @@ p.p3 {
   filter: brightness(50%);
 }
 .imgservices a:hover {
-  -webkit-filter: invert(23%) sepia(52%) saturate(420%) hue-rotate(155deg)
+  filter: invert(23%) sepia(52%) saturate(420%) hue-rotate(155deg)
     brightness(97%) contrast(90%);
-  -webkit-transition: 0.8s ease-in-out;
+  transition: 1s ease-in-out;
 }
 .title {
   padding: 30px;

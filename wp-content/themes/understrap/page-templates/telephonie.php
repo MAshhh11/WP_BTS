@@ -49,12 +49,12 @@ get_header();
 	$partenairesicones = get_field('partenaires-icones');
 	?>
 	<div class="row">
-		<div class="col-12 bg-darkGrey TelephonieBlock p-5">
-			<div class="container mt-5 p-5">
-				<div class="row mx-auto bg-white">
+		<div class="col-12 bg-darkGrey TelephonieBlock mb-5 p-5">
+			<div class="container">
+				<div class="row mx-auto bg-white mt-5">
 					<?php foreach ($partenairesicones as $partenairesicone) : ?>
-						<div class="col-12 col-sm-6 col-md-4 col-lg-2 d-flex align-items-center mx-auto blockPartenaires">
-							<img src="<?= $partenairesicone['image']['url'] ?>" style="width:140px;" alt="partenaire icone">
+						<div class="col-12 col-sm-6 col-md-4 col-lg-2 d-flex align-items-center blockPartenaires">
+							<img src="<?= $partenairesicone['image']['url'] ?>" style="width:100%;" alt="partenaire icone">
 						</div>
 					<?php endforeach; ?>
 					<div class="col-12 col-lg-12 bg-blue blockPartenaires2">

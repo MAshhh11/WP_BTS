@@ -39,10 +39,10 @@ get_header();
 	<div class="row">
 		<div class="col-12 col-sm-12 col-md-12 col-lg-12 bg-white main">
 			<div class="container">
-				<div class="row mt-5 ml-3">
+				<div class="the-title row mt-5 ml-3">
 					<h2><?= the_title() ?></h2>
 				</div>
-				<div class="row ml-5">
+				<div class="logo-titre row ml-5">
 					<img src="<?php echo $asset ?>icone_titre.png" alt="logo_titre">
 				</div>
 				<div class="row mt-2 ">
@@ -78,7 +78,7 @@ get_header();
 		<div class="col-12 mt-5">
 			<p>Nos métiers : L’expertise bureautique et informatique, ainsi que les télécommunications.</p>
 			<p>
-				<a href="">Et vous ? Parlez-nous de votre quotidien !</a>
+				<a class="tell-us" href="">Et vous ? Parlez-nous de votre quotidien !</a>
 			</p>
 		</div>
 	</div>

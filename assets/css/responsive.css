@@ -12,15 +12,22 @@
   .quote {
     left: 0%;
   }
+  .tab-page {
+    font-size: 20px;
+  }
   p {
     font-size: 18px;
   }
   .main {
-    height: 900px;
+    height: 850px !important;
+  }
+  .main-content {
+    margin-top: 20px !important;
   }
   .priorities {
     height: 1200px;
   }
+
   .BlockHomepage3 {
     height: 700px;
   }
@@ -53,16 +60,13 @@
   /* *** TELEPHONIE *** */
 
   .TelephonieBlock {
-    height: 1800px;
+    height: 1500px;
   }
   p.p1 {
     font-size: 12px;
   }
   p.p2 {
     font-size: 18px;
-  }
-  .main {
-    height: 500px;
   }
   /* *** INFORMATIQUE *** */
   .BlockInfo2 {
