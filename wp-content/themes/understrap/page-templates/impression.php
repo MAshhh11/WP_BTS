@@ -21,10 +21,10 @@ get_header();
     <div class="row contact-main-img" style="background-image:url(<?= get_the_post_thumbnail_url(); ?>)">
         <div class="col-12 col-lg-4 quote p-5">
             <div class="row">
-                <p class="">"Nous sommes ce que nous répétons chaque jour"</p>
+                <p class="">"On a qu’une seule chance de faire une bonne première impression"</p>
             </div>
             <div class="row col-12 col-lg-4">
-                <p class="author">Aristote</p>
+                <p class="author">Olivier Geary</p>
             </div>
         </div>
     </div>
